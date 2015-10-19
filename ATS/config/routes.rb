@@ -4,18 +4,18 @@ Rails.application.routes.draw do
              :path_names => {:sign_in => 'login'}
              
   devise_scope :user do
-    #get "sign_in", to: "devise/sessions#new"
     get 'users/success' => 'users/registrations#success'
     get 'users/pending' => 'users/registrations#pending'
 
     get 'users/edit_password' => 'users/registrations#edit_password'
     put 'users/update_password' => 'users/registrations#update_password'
+    get 'users/sign_out' => "devise/sessions#destroy"
   end           
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'home#index'
+  root "home#index"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
