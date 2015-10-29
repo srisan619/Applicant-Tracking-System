@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title 
+      = "Recruiting Software - Hiring Software - ATS | JobScore"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  p.notice 
+	= notice
+  p.alert 
+	= alert
+  body
+  	/navbar starts
+    .wrapper
+      /Header Section
+      = render 'layouts/header'
+
+      .section.clearfix
+        = yield
+
+      /Footer Section
+      = render 'layouts/footer'
+     
