@@ -1,0 +1,191 @@
+.tipsy {
+  font-size: 1.2em;
+  position: absolute;
+  padding: 9px;
+  z-index: 100000;
+}
+
+.tipsy-inner {
+  border-radius:6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  -ms-border-radius:6px;
+  -pie-border_radius:6px;
+  position:relative;
+  background-color: #FFFBF0;
+  background-color: #ffffcd;
+  background-color: #fff;
+  opacity:0.98;
+  color: #333;
+  max-width: 600px;
+  text-align: center;
+  padding: 10px 16px;
+  margin: -1px;
+  border: 1px solid #eee;
+  -webkit-box-shadow:0px 0px 20px rgba(0,0,0,0.4);
+  -moz-box-shadow:0px 0px 20px rgba(0,0,0,0.4);
+  box-shadow:0px 0px 20px rgba(0,0,0,0.4);
+  behavior:url(/pie/PIE.htc);
+  font-size: 14px;
+  text-align: justify;
+}
+
+.tipsy-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 100002;
+}
+
+.tipsy-n .tipsy-arrow-border,
+.tipsy-nw .tipsy-arrow-border,
+.tipsy-ne .tipsy-arrow-border {
+  top: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #E2C97F;
+  border-bottom: 9px solid #888;
+  margin-left: -9px;
+  position: absolute;
+}
+.tipsy-n .tipsy-arrow,
+.tipsy-nw .tipsy-arrow,
+.tipsy-ne .tipsy-arrow {
+  top: 2px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #FFFFCC;
+  border-bottom: 7px solid #FFF;
+  margin-left: -7px;
+}
+
+.tipsy-s .tipsy-arrow-border,
+.tipsy-sw .tipsy-arrow-border,
+.tipsy-se .tipsy-arrow-border {
+  bottom: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid #E2C97F;
+  border-top: 9px solid #888;
+  margin-left: -9px;
+  position: absolute;
+}
+.tipsy-s .tipsy-arrow,
+.tipsy-sw .tipsy-arrow,
+.tipsy-se .tipsy-arrow {
+  bottom: 2px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #FFFFCC;
+  border-top: 7px solid #FFF;
+  margin-left: -7px;
+}
+
+.tipsy-n .tipsy-arrow,
+.tipsy-n .tipsy-arrow-border,
+.tipsy-s .tipsy-arrow,
+.tipsy-s .tipsy-arrow-border {
+  left: 50%;
+}
+
+.tipsy-nw .tipsy-arrow,
+.tipsy-nw .tipsy-arrow-border,
+.tipsy-sw .tipsy-arrow,
+.tipsy-sw .tipsy-arrow-border {
+  left: 10px;
+}
+
+.tipsy-ne .tipsy-arrow,
+.tipsy-ne .tipsy-arrow-border,
+.tipsy-se .tipsy-arrow,
+.tipsy-se .tipsy-arrow-border {
+  right: 10px;
+}
+
+.tipsy-e .tipsy-arrow,
+.tipsy-e .tipsy-arrow-border,
+.tipsy-w .tipsy-arrow,
+.tipsy-w .tipsy-arrow-border {
+  top: 50%;
+  margin-top: -9px;
+}
+
+.tipsy-e .tipsy-arrow-border {
+  right: 0;
+  border-top: 9px solid transparent;
+  border-left: 9px solid #E2C97F;
+  border-left: 9px solid #888;
+  border-bottom: 9px solid transparent;
+  position: absolute;
+}
+.tipsy-e .tipsy-arrow {
+  right: 2px;
+  border-top: 7px solid transparent;
+/*  border-left: 7px solid #FFFBF0; */
+  border-left: 7px solid #ffffcd;
+  border-left: 7px solid #FFF;
+  border-bottom: 7px solid transparent;
+  margin-top: -7px;
+}
+
+.tipsy-w .tipsy-arrow-border {
+  left: 0;
+  border-top: 9px solid transparent;
+  border-right: 9px solid #E2C97F;
+  border-right: 9px solid #888;
+  border-bottom: 9px solid transparent;
+  position: absolute;
+  z-index: 100001;
+}
+.tipsy-w .tipsy-arrow {
+  left: 2px;
+  border-top: 8px solid transparent;
+/*  border-right: 8px solid #FFFBF0; */
+  border-right: 8px solid #ffffcd;
+  border-right: 8px solid #FFF;
+  border-bottom: 8px solid transparent;
+  margin-top: -8px;
+}
+
+.tipsy.black .tipsy-inner{background-color: #000000;color: #ffffff;border-color:#ffffff;}
+.tipsy.black.tipsy-n .tipsy-arrow,.tipsy.black.tipsy-nw .tipsy-arrow,.tipsy.black.tipsy-ne .tipsy-arrow {border-bottom-color: #000000;}
+.tipsy.black.tipsy-n .tipsy-arrow-border,.tipsy.black.tipsy-nw .tipsy-arrow-border,.tipsy.black.tipsy-ne .tipsy-arrow-border {border-bottom-color: #ffffff;}
+.tipsy.black.tipsy-s .tipsy-arrow,.tipsy.black.tipsy-sw .tipsy-arrow,.tipsy.black.tipsy-se .tipsy-arrow {border-top-color: #000000;}
+.tipsy.black.tipsy-s .tipsy-arrow-border,.tipsy.black.tipsy-sw .tipsy-arrow-border,.tipsy.black.tipsy-se .tipsy-arrow-border {border-top-color: #ffffff;}
+.tipsy.black.tipsy-e .tipsy-arrow {border-left-color: #000000;}
+.tipsy.black.tipsy-e .tipsy-arrow-border {border-left-color: #ffffff;}
+.tipsy.black.tipsy-w .tipsy-arrow {border-right-color: #000000;}
+.tipsy.black.tipsy-w .tipsy-arrow-border {border-right-color: #ffffff;}
+
+.tipsy.red .tipsy-inner{background-color: #ff0000;color: #ffffff;border-color:#ffffff;}
+.tipsy.red.tipsy-n .tipsy-arrow,.tipsy.red.tipsy-nw .tipsy-arrow,.tipsy.red.tipsy-ne .tipsy-arrow {border-bottom-color: #ff0000;}
+.tipsy.red.tipsy-n .tipsy-arrow-border,.tipsy.red.tipsy-nw .tipsy-arrow-border,.tipsy.red.tipsy-ne .tipsy-arrow-border {border-bottom-color: #ffffff;}
+.tipsy.red.tipsy-s .tipsy-arrow,.tipsy.red.tipsy-sw .tipsy-arrow,.tipsy.red.tipsy-se .tipsy-arrow {border-top-color: #ff0000;}
+.tipsy.red.tipsy-s .tipsy-arrow-border,.tipsy.red.tipsy-sw .tipsy-arrow-border,.tipsy.red.tipsy-se .tipsy-arrow-border {border-top-color: #ffffff;}
+.tipsy.red.tipsy-e .tipsy-arrow {border-left-color: #ff0000;}
+.tipsy.red.tipsy-e .tipsy-arrow-border {border-left-color: #ffffff;}
+.tipsy.red.tipsy-w .tipsy-arrow {border-right-color: #ff0000;}
+.tipsy.red.tipsy-w .tipsy-arrow-border {border-right-color: #ffffff;}
+
+.tipsy.green .tipsy-inner{background-color: #00ff00;color: #000000;border-color:#000000;}
+.tipsy.green.tipsy-n .tipsy-arrow,.tipsy.green.tipsy-nw .tipsy-arrow,.tipsy.green.tipsy-ne .tipsy-arrow {border-bottom-color: #00ff00;}
+.tipsy.green.tipsy-n .tipsy-arrow-border,.tipsy.green.tipsy-nw .tipsy-arrow-border,.tipsy.green.tipsy-ne .tipsy-arrow-border {border-bottom-color: #000000;}
+.tipsy.green.tipsy-s .tipsy-arrow,.tipsy.green.tipsy-sw .tipsy-arrow,.tipsy.green.tipsy-se .tipsy-arrow {border-top-color: #00ff00;}
+.tipsy.green.tipsy-s .tipsy-arrow-border,.tipsy.green.tipsy-sw .tipsy-arrow-border,.tipsy.green.tipsy-se .tipsy-arrow-border {border-top-color: #000000;}
+.tipsy.green.tipsy-e .tipsy-arrow {border-left-color: #00ff00;}
+.tipsy.green.tipsy-e .tipsy-arrow-border {border-left-color: #000000;}
+.tipsy.green.tipsy-w .tipsy-arrow {border-right-color: #00ff00;}
+.tipsy.green.tipsy-w .tipsy-arrow-border {border-right-color: #000000;}
+
+.tipsy.blue .tipsy-inner{background-color: #0000ff;color: #000000;border-color:#000000;}
+.tipsy.blue.tipsy-n .tipsy-arrow,.tipsy.blue.tipsy-nw .tipsy-arrow,.tipsy.blue.tipsy-ne .tipsy-arrow {border-bottom-color: #0000ff;}
+.tipsy.blue.tipsy-n .tipsy-arrow-border,.tipsy.blue.tipsy-nw .tipsy-arrow-border,.tipsy.blue.tipsy-ne .tipsy-arrow-border {border-bottom-color: #000000;}
+.tipsy.blue.tipsy-s .tipsy-arrow,.tipsy.blue.tipsy-sw .tipsy-arrow,.tipsy.blue.tipsy-se .tipsy-arrow {border-top-color: #0000ff;}
+.tipsy.blue.tipsy-s .tipsy-arrow-border,.tipsy.blue.tipsy-sw .tipsy-arrow-border,.tipsy.blue.tipsy-se .tipsy-arrow-border {border-top-color: #000000;}
+.tipsy.blue.tipsy-e .tipsy-arrow {border-left-color: #0000ff;}
+.tipsy.blue.tipsy-e .tipsy-arrow-border {border-left-color: #000000;}
+.tipsy.blue.tipsy-w .tipsy-arrow {border-right-color: #0000ff;}
+.tipsy.blue.tipsy-w .tipsy-arrow-border {border-right-color: #000000;}
+
+.tipsy.left .tipsy-inner{text-align:left;}
+.tipsy.right .tipsy-inner{text-align:right;}
