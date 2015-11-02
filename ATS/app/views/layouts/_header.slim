@@ -1,15 +1,28 @@
-header
-  .header-content.is-clearfixed
-    a href="/?utm_source=jobscore&utm_medium=top_bar_logo" 
-    .jobscore-logo.is-hoverable
-      span.jscore-jobscore-inline-1 aria-hidden="true" 
-      span.jscore-jobscore-inline-2 aria-hidden="true" 
-    .header-menu
-      span.jscore-menu
-      ul.is-clearfixed
-        li
-          a.button.blue.margin-helper href="#"
-            | JOB SEEKER HOME
-        li
-          a.button.solid.blue href="/users/login"
-            | EMPLOYER LOGIN
+- if params[:controller] == "users/sessions" && params[:action] == "new"
+  .top-bar
+    .primary
+      .inner
+        .brand
+          a href="https://www.jobscore.com/"
+          #jobscore-logo.jobscore-logo
+            span.atsicon-jobscore-inline-1 aria-hidden="true"
+            span.atsicon-jobscore-inline-2 aria-hidden="true"
+        .change-system-link.right
+          | Job Seeker?
+          a href="https://profile.jobscore.com/login"  Login here
+- else
+  header
+    .header-content.is-clearfixed
+      a href="/?utm_source=jobscore&utm_medium=top_bar_logo"
+      .jobscore-logo.is-hoverable
+        span.jscore-jobscore-inline-1 aria-hidden="true"
+        span.jscore-jobscore-inline-2 aria-hidden="true"
+      .header-menu
+        span.jscore-menu
+        ul.is-clearfixed
+          li
+            a.button.blue.margin-helper href="#"
+              | JOB SEEKER HOME
+          li
+            a.button.solid.blue href="/users/login"
+              | EMPLOYER LOGIN

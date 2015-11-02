@@ -1,0 +1,33 @@
+.sessions.new.modern
+  .login-area
+    #login-page-title.text-center EMPLOYER LOGIN
+    form accept-charset="UTF-8" action="https://hire.jobscore.com/login" method="post"
+      div style="margin:0;padding:0;display:inline"
+        input name="utf8" type="hidden" value="✓" /
+        input name="authenticity_token" type="hidden" value="/X7bWcaf3n2VH05Oc3sq++ZTI6cqYGHlKahu47qbpRE=" /
+      .login-form.grid-form
+        .row
+          .columns.small-12
+            input#login.ui-form-field.full accesskey="U" name="login" placeholder="Username" size="30" tabindex="1" type="text" /
+        .row
+          .columns.small-12
+            input#password.ui-form-field.full accesskey="P" name="password" placeholder="Password" size="30" tabindex="2" type="password" /
+        .row
+          .columns.small-7
+            input#persist_session.ui-form-field accesskey="R" name="persist_session" tabindex="3" type="checkbox" value="1" /
+            label.ui-form-label for="persist_session"
+              span.icon-layers.checkbox
+                span.icon-checkbox
+                span.icon-checkbox-status
+              span.icon-checkbox-text Keep me logged in
+          .columns.small-5.text-right
+            a#forgot-password-link href="https://hire.jobscore.com/forgot_password"  Forgot password?
+        .row
+          .columns.small-12
+            button.full.form-button name="button" tabindex="4" type="submit"  LOG IN
+.row.collapse
+  .columns.small-12.text-center
+    a href="/login/sso"  SSO Login
+    | |
+    | Don't have a JobScore account?
+    a href="/signup"  Sign Up
