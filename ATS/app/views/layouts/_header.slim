@@ -1,15 +1,16 @@
 - if params[:controller] == "users/sessions" && params[:action] == "new"
-  .top-bar
-    .primary
-      .inner
-        .brand
-          a href="https://www.jobscore.com/"
-          #jobscore-logo.jobscore-logo
-            span.atsicon-jobscore-inline-1 aria-hidden="true"
-            span.atsicon-jobscore-inline-2 aria-hidden="true"
-        .change-system-link.right
-          | Job Seeker?
-          a href="https://profile.jobscore.com/login"  Login here
+  .sessions.new.modern
+    .top-bar
+      .primary
+        .inner
+          .brand
+            a href="https://www.jobscore.com/"
+            #jobscore-logo.jobscore-logo
+              span.atsicon-jobscore-inline-1 aria-hidden="true"
+              span.atsicon-jobscore-inline-2 aria-hidden="true"
+          .change-system-link.right
+            | Job Seeker?
+            a href="https://profile.jobscore.com/login"  Login here
 - else
   header
     .header-content.is-clearfixed
