@@ -1,0 +1,21 @@
+= stylesheet_link_tag 'global', media: 'all', 'data-turbolinks-track' => true
+.forgot_passwords.new.modern{style="height: 585px" }
+  .login-area
+    = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+      = devise_error_messages!
+      div style="margin:0;padding:0;display:inline"
+        input name="utf8" type="hidden" value="✓" /
+        input name="authenticity_token" type="hidden" value="DmJ8886jjtwgpLW/TL5DXQP3e549DY0XnLOSk2sKSCY=" /
+      .login-form.grid-form
+        .row
+          .columns.small-12.forgot-password-label
+            label for="email"  Enter your email address:
+        .row
+          .columns.small-12
+            /input#email.full name="email" placeholder=("Email Address") size="30" type="text" value="" /
+            = f.email_field :email, autofocus: true, placeholder: "Email Address", size: 30
+        .row
+          .columns.small-12
+            button.full.form-button name="button" type="submit"  RESET PASSWORD
+
+
