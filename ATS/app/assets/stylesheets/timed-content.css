@@ -59,3 +59,13 @@ table.tcr-dates tr th {
     background-color: #333366;
     color: #ffffff;
  }
+
+/*For font awesome*/
+div.bullet span.fa-lock:before {
+    padding-left: 19px;
+    padding-top: 14px;
+}
+div.bullet span.fa-users:before, div.bullet span.fa-headphones:before, div.bullet span.fa-heart:before {
+    padding-left: 16px;
+    padding-top: 14px;
+}
