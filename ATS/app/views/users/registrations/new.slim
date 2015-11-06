@@ -1,0 +1,86 @@
+section.wood style="min-height: 630px;"
+  .row.is-text-light
+    .small-12.medium-7.columns.end
+  .row
+    .small-12.medium-7.columns.signup-bullets
+      .row
+        .small-12.medium-6.large-6.columns
+          .bullet
+            span.fa.fa-lock
+            h3 Secure, scalable and reliable
+            p 1,000,000+ resumes processed
+        .small-12.medium-6.large-6.columns
+          .bullet
+            span.fa.fa-users
+            h3 Designed by recruiters
+            p We make the busy-work go away
+      .row
+        .small-12.medium-6.large-6.columns
+          .bullet
+            span.fa.fa-headphones
+            h3 Great customer service
+            p Fast, accurate and friendly
+        .small-12.medium-6.large-6.columns
+          .bullet
+            span.fa.fa-heart
+            h3 You’re in good company
+            p 1,000+ employers have hired thousands
+    .small-12.medium-5.columns
+  /.customers-container
+  /  .row.customers
+  /    .small-12.medium-7.columns.end
+  /      .row
+  /        .small-6.medium-4.columns.customer
+  /          img src="/wp-content/uploads/logo_puppetlabs.png" /
+  /        .small-6.medium-4.columns.customer
+  /          img src="/wp-content/uploads/logo_platfora.png" /
+  /        .small-6.medium-4.columns.customer
+  /          img src="/wp-content/uploads/logo_revionics.png" /
+  /        .small-6.medium-4.columns.customer
+  /          img src="/wp-content/uploads/logo_threadless.png" /
+  /        .small-6.medium-4.columns.customer
+  /          img src="/wp-content/uploads/logo_6.png" /
+  /        .small-6.medium-4.columns.customer
+  /          img src="/wp-content/uploads/logo_2.png" /
+  .signup-container
+    .row
+      .small-12.medium-7.columns.signup-bullets
+      .small-12.medium-5.columns.wide
+        #signup-page.wrapper
+          #signup-page-inner-container
+            #signup-dialog-wrapper
+              #signup-dialog.input-form
+                .signup-box
+                  #signup-errors style="display:block"
+                    .errorExplanation
+                      ul.errors-list
+
+                  form.js-signup-form autocomplete="on" data-action="https://hire.jobscore.com/signup_account" method="POST"
+                    input autocomplete="given-name" data-field="first_name" name="ats_user[firstname]" placeholder=("First Name") required="" title=("Your First Name") type="text" /
+                    input autocomplete="family-name" data-field="last_name" name="ats_user[lastname]" placeholder=("Last Name") required="" title=("Your Last Name") type="text" /
+                    input autocomplete="email" data-field="email" name="ats_user[primary_email]" original-title=("Your Work Email Address (me@company.com)") placeholder=("Work Email") required="" type="email" /
+                    input#phone autocomplete="tel" data-field="phone_number" name="ats_user[primary_phone]" placeholder="Phone" title=("Work Phone Number") type="tel" /
+                    input autocomplete="organization" data-field="full_company_name" name="account[company_name]" placeholder=("Company Name") required="" title=("Full Company Name") type="text" /
+                    input autocomplete="url" data-field="homepage_url" name="account[company_url]" original-title=("Company Homepage URL (http://www.company.com)") placeholder=("Company Homepage") required="" type="url" /
+                    select#employee_count data-field="employee_count" name="account[employee_count]" placeholder=("# Employees") required="" title=("Number of employees at your company")
+                      option value=""  # Employees
+                      option value="19"  1-19 employees
+                      option value="49"  20-49 employees
+                      option value="99"  50-99 employees
+                      option value="249"  100-249 employees
+                      option value="499"  250-499 employees
+                      option value="999"  500-999 employees
+                      option value="2999"  1000-2999 employees
+                      option value="4999"  3000-4999 employees
+                      option value="9999"  5000-9999 employees
+                      option value="10000"  10,000+ employees
+                    select#plan_name label=("Plan Name") name="plan_name" placeholder="none"
+                      option value="Free"  Free | $0/mo
+                      option value="Plus"  Plus | $99/mo
+                      option value="Premium"  Premium | $249/mo
+                      option value="Enterprise"  Enterprise | $499/mo (<100 employees)
+                    p.enterprise_custom_text style=("display: none;")
+                      | Self-service pricing is only for companies with less than 100 employees.
+                      | We will contact you to perform a consultation and craft a custom solution after you signup.
+                    .submit-button
+                      input.button.green.solid.full.tall type="submit" value=("Start Hiring") /

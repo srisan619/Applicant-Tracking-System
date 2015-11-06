@@ -23,154 +23,154 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.jscore-people-magnifying-glass:before {
-	content: "\e900";
-}
-.jscore-workflow2:before {
-	content: "\e901";
-}
-.jscore-padlock-locked:before {
-	content: "\e804";
-}
-.jscore-gear3:before {
-	content: "\e805";
-}
-.jscore-headset-with-mic:before {
-	content: "\e806";
-}
-.jscore-heart3:before {
-	content: "\e807";
-}
-.jscore-google-new-blue:before {
-	content: "\e800";
-}
-.jscore-google-new-green:before {
-	content: "\e801";
-}
-.jscore-google-new-red:before {
-	content: "\e802";
-}
-.jscore-google-new-yellow:before {
-	content: "\e803";
-}
-.jscore-check2:before {
-	content: "\e623";
-}
-.jscore-check:before {
-	content: "\e624";
-}
-.jscore-arrow-up-with-circle:before {
-	content: "\e61b";
-}
-.jscore-wallet-arrow:before {
-	content: "\e61d";
-}
-.jscore-wallet:before {
-	content: "\e61e";
-}
-.jscore-analytics:before {
-	content: "\e61f";
-}
-.jscore-workflow:before {
-	content: "\e620";
-}
-.jscore-airplane:before {
-	content: "\e621";
-}
-.jscore-menu:before {
-	content: "\e61c";
-}
-.jscore-fones:before {
-	content: "\e60d";
-}
-.jscore-lock:before {
-	content: "\e619";
-}
-.jscore-gear2:before {
-	content: "\e61a";
-}
-.jscore-gear:before {
-	content: "\e600";
-}
-.jscore-doc:before {
-	content: "\e60c";
-}
-.jscore-comments:before {
-	content: "\f086";
-}
-.jscore-heart:before {
-	content: "\e601";
-}
-.jscore-call:before {
-	content: "\e602";
-}
-.jscore-jobscore-inline-2:before {
-	content: "\e604";
-}
-.jscore-jobscore-inline-1:before {
-	content: "\e605";
-}
-.jscore-link:before {
-	content: "\e603";
-}
-.jscore-clock:before {
-	content: "\e606";
-}
-.jscore-note:before {
-	content: "\e607";
-}
-.jscore-tag:before {
-	content: "\e608";
-}
-.jscore-paperplane:before {
-	content: "\e609";
-}
-.jscore-pin:before {
-	content: "\e60a";
-}
-.jscore-time:before {
-	content: "\e60b";
-}
-.jscore-twitter:before {
-	content: "\e60e";
-}
-.jscore-facebook:before {
-	content: "\e60f";
-}
-.jscore-google:before {
-	content: "\e610";
-}
-.jscore-linkedin:before {
-	content: "\e611";
-}
-.jscore-resume:before {
-	content: "\e612";
-}
-.jscore-candidates:before {
-	content: "\e613";
-}
-.jscore-report:before {
-	content: "\e614";
-}
-.jscore-trophy:before {
-	content: "\e615";
-}
-.jscore-globe:before {
-	content: "\e616";
-}
-.jscore-rssdoc:before {
-	content: "\e617";
-}
-.jscore-user:before {
-	content: "\e618";
-}
-.jscore-heart2:before {
-	content: "\ece9";
-}
-.jscore-stack-text:before {
-	content: "\ed41";
-}
-.jscore-google-plus:before {
-	content: "\e645";
-}
+/*.jscore-people-magnifying-glass:before {*/
+	/*content: "\e900";*/
+/*}*/
+/*.jscore-workflow2:before {*/
+	/*content: "\e901";*/
+/*}*/
+/*.jscore-padlock-locked:before {*/
+	/*content: "\e804";*/
+/*}*/
+/*.jscore-gear3:before {*/
+	/*content: "\e805";*/
+/*}*/
+/*.jscore-headset-with-mic:before {*/
+	/*content: "\e806";*/
+/*}*/
+/*.jscore-heart3:before {*/
+	/*content: "\e807";*/
+/*}*/
+/*.jscore-google-new-blue:before {*/
+	/*content: "\e800";*/
+/*}*/
+/*.jscore-google-new-green:before {*/
+	/*content: "\e801";*/
+/*}*/
+/*.jscore-google-new-red:before {*/
+	/*content: "\e802";*/
+/*}*/
+/*.jscore-google-new-yellow:before {*/
+	/*content: "\e803";*/
+/*}*/
+/*.jscore-check2:before {*/
+	/*content: "\e623";*/
+/*}*/
+/*.jscore-check:before {*/
+	/*content: "\e624";*/
+/*}*/
+/*.jscore-arrow-up-with-circle:before {*/
+	/*content: "\e61b";*/
+/*}*/
+/*.jscore-wallet-arrow:before {*/
+	/*content: "\e61d";*/
+/*}*/
+/*.jscore-wallet:before {*/
+	/*content: "\e61e";*/
+/*}*/
+/*.jscore-analytics:before {*/
+	/*content: "\e61f";*/
+/*}*/
+/*.jscore-workflow:before {*/
+	/*content: "\e620";*/
+/*}*/
+/*.jscore-airplane:before {*/
+	/*content: "\e621";*/
+/*}*/
+/*.jscore-menu:before {*/
+	/*content: "\e61c";*/
+/*}*/
+/*.jscore-fones:before {*/
+	/*content: "\e60d";*/
+/*}*/
+/*.jscore-lock:before {*/
+	/*content: "\e619";*/
+/*}*/
+/*.jscore-gear2:before {*/
+	/*content: "\e61a";*/
+/*}*/
+/*.jscore-gear:before {*/
+	/*content: "\e600";*/
+/*}*/
+/*.jscore-doc:before {*/
+	/*content: "\e60c";*/
+/*}*/
+/*.jscore-comments:before {*/
+	/*content: "\f086";*/
+/*}*/
+/*.jscore-heart:before {*/
+	/*content: "\e601";*/
+/*}*/
+/*.jscore-call:before {*/
+	/*content: "\e602";*/
+/*}*/
+/*.jscore-jobscore-inline-2:before {*/
+	/*content: "\e604";*/
+/*}*/
+/*.jscore-jobscore-inline-1:before {*/
+	/*content: "\e605";*/
+/*}*/
+/*.jscore-link:before {*/
+	/*content: "\e603";*/
+/*}*/
+/*.jscore-clock:before {*/
+	/*content: "\e606";*/
+/*}*/
+/*.jscore-note:before {*/
+	/*content: "\e607";*/
+/*}*/
+/*.jscore-tag:before {*/
+	/*content: "\e608";*/
+/*}*/
+/*.jscore-paperplane:before {*/
+	/*content: "\e609";*/
+/*}*/
+/*.jscore-pin:before {*/
+	/*content: "\e60a";*/
+/*}*/
+/*.jscore-time:before {*/
+	/*content: "\e60b";*/
+/*}*/
+/*.jscore-twitter:before {*/
+	/*content: "\e60e";*/
+/*}*/
+/*.jscore-facebook:before {*/
+	/*content: "\e60f";*/
+/*}*/
+/*.jscore-google:before {*/
+	/*content: "\e610";*/
+/*}*/
+/*.jscore-linkedin:before {*/
+	/*content: "\e611";*/
+/*}*/
+/*.jscore-resume:before {*/
+	/*content: "\e612";*/
+/*}*/
+/*.jscore-candidates:before {*/
+	/*content: "\e613";*/
+/*}*/
+/*.jscore-report:before {*/
+	/*content: "\e614";*/
+/*}*/
+/*.jscore-trophy:before {*/
+	/*content: "\e615";*/
+/*}*/
+/*.jscore-globe:before {*/
+	/*content: "\e616";*/
+/*}*/
+/*.jscore-rssdoc:before {*/
+	/*content: "\e617";*/
+/*}*/
+/*.jscore-user:before {*/
+	/*content: "\e618";*/
+/*}*/
+/*.jscore-heart2:before {*/
+	/*content: "\ece9";*/
+/*}*/
+/*.jscore-stack-text:before {*/
+	/*content: "\ed41";*/
+/*}*/
+/*.jscore-google-plus:before {*/
+	/*content: "\e645";*/
+/*}*/
 
