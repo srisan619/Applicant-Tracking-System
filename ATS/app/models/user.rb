@@ -3,4 +3,6 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+  belongs_to :package
+  validates_presence_of :email, :first_name, :last_name, :company_name, :company_url, :employees_count, :package_id
 end

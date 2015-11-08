@@ -3,5 +3,5 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+packages = Package.create([{ name: 'Free', amount: 0 }, { name: 'Plus', amount: 99 }, { name: 'Premium', amount: 249}, { name: 'Enterprise', amount: 499}])
+

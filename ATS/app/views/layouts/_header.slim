@@ -4,24 +4,24 @@
       .primary
         .inner
           .brand
-            a href="#{root_path}"
-            #jobscore-logo.jobscore-logo
-              span.ats_bold.ats_white aria-hidden="true"
-                = 'ATS'
-              span.ats_bold.ats_logo aria-hidden="true"
-                = 'JOB'
+            a href="/"
+              #jobscore-logo.jobscore-logo
+                span.ats_bold.ats_white aria-hidden="true"
+                  = 'ATS'
+                span.ats_bold.ats_logo aria-hidden="true"
+                  = 'JOB'
           .change-system-link.right
             | Job Seeker?
             a href="https://profile.jobscore.com/login"  Login here
 - else
   header
     .header-content.is-clearfixed
-      a href="/?utm_source=jobscore&utm_medium=top_bar_logo"
-      .jobscore-logo.is-hoverable
-        span.ats_bold aria-hidden="true"
-          = 'ATS'
-        span.ats_bold.ats_logo aria-hidden="true"
-          = 'JOB'
+      a href="/"
+        .jobscore-logo.is-hoverable
+          span.ats_bold.ats_black aria-hidden="true"
+            = 'ATS'
+          span.ats_bold.ats_logo aria-hidden="true"
+            = 'JOB'
       .header-menu
         span.jscore-menu
         ul.is-clearfixed

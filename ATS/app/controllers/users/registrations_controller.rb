@@ -2,6 +2,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
  skip_before_filter :require_no_authentication
  before_filter :configure_sign_up_params, only: [:create]
  before_filter :configure_account_update_params, only: [:update]
+ before_filter :configure_permitted_parameters
 
   # GET /resource/sign_up
   def new
@@ -46,8 +47,15 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # If you have extra params to permit, append them to the sanitizer.
   def configure_account_update_params
+    devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:first_name, :last_name, :company_name, :company_url, :employees_count, :package_id) }
     devise_parameter_sanitizer.for(:account_update) << :attribute
   end
+
+ def configure_permitted_parameters
+   devise_parameter_sanitizer.for(:sign_up) do |u|
+     u.permit(:email, :password, :password_confirmation, :first_name, :last_name, :company_name, :company_url, :employees_count, :package_id)
+   end
+ end
 
   # The path used after sign up.
   def after_sign_up_path_for(resource)
