@@ -8,7 +8,7 @@ header.secondary
       /    | Download
       /    i.atsicon-down-arrow
       li
-        a.button.js-btn-with-icon href="/employer/candidate/search_candidate?referral_controller=messages&amp;referral_page=add_feedback&amp;section=add_task" 
+        a.button.js-btn-with-icon href="#{new_task_path}"
           i.fa.fa-calendar-check-o
           span.text Add Task
 section.tabs
@@ -88,20 +88,3 @@ section.area-container
                           a.delete_task.actionitem.menu-item-with-icon href="#"
                             i.atsicon.atsicon-menu-del
                             | Delete
-
-section.area-actions.row.collapse
-  .small-12.columns
-
-
-
-javascript:
-  $(document).ready(function() {
-   $("a#completed, a#reopen, a#deleted").click(function() {
-      onMarkAsClick($(this));
-      $('.actionmenu-opened').trigger('click');
-    });
-    $(".postpane-menu-item").click(function() {
-      onPostponeClick($j(this));
-      $('.actionmenu-opened').trigger('click');
-    });
-  });

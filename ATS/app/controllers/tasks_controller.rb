@@ -5,4 +5,12 @@ class TasksController < ApplicationController
   def index
 
   end
+
+  def new
+    #raise params.inspect
+  end
+
+  def create
+
+  end
 end
