@@ -1,0 +1,178 @@
+= stylesheet_link_tag 'global', media: 'all', 'data-turbolinks-track' => true
+= stylesheet_link_tag 'normalize', media: 'all', 'data-turbolinks-track' => true
+= stylesheet_link_tag 'custom', media: 'all', 'data-turbolinks-track' => true
+= stylesheet_link_tag 'font-awesome.min', media: 'all', 'data-turbolinks-track' => true
+= favicon_link_tag 'favicon.ico'
+title
+  = "ATS Welcome"
+.welcome.show_welcome.modern
+  .top-bar
+    .primary
+      .inner
+        .brand
+          a href="/employers/"
+            #jobscore-logo.jobscore-logo
+              span.ats_bold.ats_white aria-hidden="true"
+                = 'ATS'
+              span.ats_bold.ats_logo aria-hidden="true"
+                = 'JOB'
+        nav
+          ul
+            li.username.top-dropdown
+              ul.actionmenu.actionmenu-standard.actionmenu-group icon=("atsicon atsicon-triangle-down")
+                li.actionmenu-item
+                  a href="#"
+                    span{style="float: left; padding: 12px;" }
+                      = current_user.first_name
+                    i.fa.fa-caret-down{style="float: right;" }
+                  span.arrow-menu
+                  ul.actionmenu-group.actionmenu-vertical.navtab-submenu
+                    li
+                      a.actionitem href="/employer/settings/view/"  My Settings
+                    li
+                      a.actionitem href="/users/sign_out"  Log Out
+        ul
+          li.company.top-dropdown
+            span.company-name
+              = current_user.company_name
+          li.plan Free
+          li.upgrade
+            /a.upgrade-link href="/employer/plans/upgrade"  UPGRADE
+    .secondary
+      .inner
+        nav.navtab
+          ul.actionmenu.actionmenu-navtab.no-active.actionmenu-hover
+            li.home-item.actionmenu-item[class="#{home_btn_is_active}"]
+              a href="/employers"
+                i.fa.fa-home
+            /li.actionmenu-unbind.actionmenu-item
+            /  a href="#"
+            /    i.atsicon.atsicon-add
+            /    | ADD
+            /  ul.navtab-submenu
+            /    li
+            /      a.menu-item-with-icon.js-btn-with-icon href="/employer/users/new?back_to_referer=true"
+            /        i.atsicon.atsicon-ico_user1
+            /        span.text Add User
+            /    li
+            /      a.menu-item-with-icon.js-btn-with-icon href="/employer/candidate/search_candidate?referral_controller=messages&amp;referral_page=add_feedback&amp;section=add_task"
+            /        i.atsicon.atsicon-ico_reports2
+            /        span.text Add Task
+            /    li
+            /      a.menu-item-with-icon.js-btn-with-icon href="/employer/candidate/search_candidate?escape=false&amp;referral_controller=messages&amp;referral_page=add_feedback&amp;section=add_note"
+            /        i.atsicon.atsicon-ico_note
+            /        span.text Add Note
+            /    li
+            /      a.menu-item-with-icon.js-btn-with-icon href="/employer/candidates/new"
+            /        i.atsicon.atsicon-ico-candidates3
+            /        span.text Add Candidate
+            /    li
+            /      a.menu-item-with-icon.js-btn-with-icon href="/employer/jobs/add_job_description?new_job=true"
+            /        i.atsicon.atsicon-ico_jobs2
+            /        span.text Add Job
+            li.tasks-item.actionmenu-item
+              a href="/employer/tasks"
+                i.fa.fa-calendar-check-o
+                | TASKS
+            li.candidate-item.actionmenu-item
+              a href="/employer/candidate"
+                i.fa.fa-users
+                | CANDIDATES
+            li.jobs-item.actionmenu-item
+              a href="/employer/jobs"
+                i.fa.fa-briefcase
+                | JOBS
+            li.admin-item.actionmenu-unbind.actionmenu-item
+              a href="#"
+                i.fa.fa-cog
+                | ADMIN
+              ul.navtab-submenu data-menu-scroll-enabled="false"
+                li
+                  a href="/employer/admin/account"  Account
+                li
+                  a href="/employer/admin/view_users"  Users
+                li
+                  a href="/employer/admin/edit_locations"  Locations
+                li
+                  a href="/employer/admin/edit_departments"  Departments
+                li
+                  a href="/employer/admin/edit_sources"  Sources
+                li
+                  a href="/employer/account_active_sub_statuses"  Candidate Workflow
+                li
+                  a href="/employer/account_task_categories"  Task Categories
+                li
+                  a href="/employer/disposition_codes"  Disposition Codes
+                li
+                  a href="/employer/career_site_preferences/overview"  Careers Site
+                li
+                  a href="/employer/tags"  Tags
+                li
+                  a href="/employer/media"  Media Library
+                li
+                  a href="/employer/search_firms"  Search Firms
+                li
+                  span.actionmenu-group-title Templates:
+                li
+                  a href="/employer/admin/edit_job_defaults"  New Job
+                li
+                  a href="/employer/email_templates"  Email
+                li
+                  a href="/employer/note_templates"  Note
+                li
+                  a href="/employer/candidate_macros"  Action
+                li
+                  span.actionmenu-group-title Billing &amp; Credits:
+                li
+                  a href="/employer/admin/billing_info"  Billing Information
+                li
+                  a href="/employer/credit_manager"  Resume Credits
+
+        .search
+          form#candidate_search_form accept-charset="UTF-8" action="/employer/search/extended" method="get"
+            div style="margin:0;padding:0;display:inline"
+              input name="utf8" type="hidden" value="✓" /
+            input name="sub" type="hidden" value="view_search" /
+            .label
+              span.search-icon
+                i.fa.fa-search
+              input.js-top-search-candidate name="keywords" type="text" /
+              span.hide.js-throbber-top-search-candidate
+                img alt="Throbber_vertical_active" src="/images/throbber_vertical_active.gif?1438381890" /
+  #container
+  	=yield
+  	
+  footer
+    .row.collapse
+      .small-6.columns
+        .address
+          address
+            a href="tel:+14159049900"  415-904-9900
+          nav.line-top
+            ul
+              li
+                a href="mailto:support@ats.com"  Email Support
+            
+              li
+                a href="https://www.jobscore.com/about/" target="_blank"  About JobScore
+              li
+                a href="http://blog.jobscore.com" target="_blank"  Blog
+      .small-6.columns
+        .jobscore-rights
+          p> &copy; 2015
+          | &nbsp;
+          a href="/"
+            .jobscore-logo.is-hoverable
+              span.ats_bold.ats_black aria-hidden="true"
+                = 'ATS'
+              span.ats_bold.ats_logo aria-hidden="true"
+                = 'JOB'
+          | &nbsp;
+          p All Rights Reserved
+        .rights
+          nav.line-bottom
+            ul
+              li
+                a href="https://www.jobscore.com/agreements/privacy_policy/" target="_blank"  Privacy Policy
+              li
+                a href="https://www.jobscore.com/agreements/terms_of_service/" target="_blank"  Terms of Service

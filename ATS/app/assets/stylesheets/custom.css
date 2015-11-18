@@ -31,3 +31,9 @@ div.bullet span.fa-mouse-pointer:before {
 .fa{
     display: block !important;
 }
+
+.top-bar .secondary li.active{
+    background-color: #edf1f5;
+    color: #2c5b9c;
+    padding: 5px;
+}
