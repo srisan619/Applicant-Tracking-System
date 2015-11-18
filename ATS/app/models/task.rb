@@ -1,0 +1,3 @@
+class Task < User
+
+end

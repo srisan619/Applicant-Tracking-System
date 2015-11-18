@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151108071548) do
+ActiveRecord::Schema.define(version: 20151118090848) do
 
   create_table "packages", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -19,6 +19,28 @@ ActiveRecord::Schema.define(version: 20151108071548) do
     t.boolean  "is_active",                             default: true, null: false
     t.datetime "created_at",                                           null: false
     t.datetime "updated_at",                                           null: false
+  end
+
+  create_table "task_categories", force: :cascade do |t|
+    t.string   "name",           limit: 255,                null: false
+    t.integer  "priority_order", limit: 4
+    t.boolean  "is_active",                  default: true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.integer  "task_category_id", limit: 4
+    t.integer  "user_id",          limit: 4
+    t.boolean  "is_email_notify",                default: false
+    t.text     "subject",          limit: 65535
+    t.date     "task_date"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.integer  "candidate_id",     limit: 4
+    t.string   "status",           limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: :cascade do |t|

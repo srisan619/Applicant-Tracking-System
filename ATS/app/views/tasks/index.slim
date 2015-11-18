@@ -1,0 +1,107 @@
+header.secondary
+  hgroup
+    h1 Task Manager
+  nav
+    ul
+      /li
+      /  a.button.download.disabled.js-export-popup data-popup="export" href="#"
+      /    | Download
+      /    i.atsicon-down-arrow
+      li
+        a.button.js-btn-with-icon href="/employer/candidate/search_candidate?referral_controller=messages&amp;referral_page=add_feedback&amp;section=add_task" 
+          i.fa.fa-calendar-check-o
+          span.text Add Task
+section.tabs
+  nav.primary
+    ul
+      li.current
+        a href="/employer/tasks/list?type=upcoming"  My Tasks
+      li
+        a href="/employer/tasks/list?type=completed"  My Completed Tasks
+      li
+        a href="/employer/tasks/list?type=assigned"  Assigned
+      li
+        a href="/employer/tasks/list?type=all"  All Tasks
+
+section.area-container
+  main
+    form accept-charset="UTF-8" action="/employer/tasks/change_tasks_status" method="post" name="task_form"
+      div style="margin:0;padding:0;display:inline"
+        input name="utf8" type="hidden" value="✓" /
+        input name="authenticity_token" type="hidden" value="DmJ8886jjtwgpLW/TL5DXQP3e549DY0XnLOSk2sKSCY=" /
+      section.area
+        main
+          input name="type" type="hidden" value="upcoming" /
+          input#page name="page" type="hidden" value="1" /
+          table.default-table
+            thead
+              tr
+                th width="25"
+                  input.ui-form-field.bulk-selection-all name="checkall" onclick="checkUncheckAll(this)" type="checkbox" value="xxx" /
+                th.text-left width="10%"
+                  a.sorter-title href="/employer/tasks/list?filter%5Bsort_by%5D=0&amp;filter%5Bsort_order%5D=DESC&amp;type=upcoming"
+                    span Due Date
+                  .sortable-icons.asc
+                th.text-left width="120"
+                  a.sorter-title href="/employer/tasks/list?filter%5Bsort_by%5D=1&amp;type=upcoming"
+                    span Category
+                  .sortable-icons
+                th width="440"
+                  a.sorter-title href="/employer/tasks/list?filter%5Bsort_by%5D=2&amp;type=upcoming"
+                    span Text
+                  .sortable-icons
+                th.text-left width="120"
+                  a.sorter-title href="/employer/tasks/list?filter%5Bsort_by%5D=3&amp;type=upcoming"
+                    span Assigned By
+                  .sortable-icons
+                th.actions.text-left Action
+            tbody
+              tr data-group-description=("11:00am - 12:00pm: Edwin Simiyu") data-slot-id="cRLcrgIRSr5y8ieMg-44q7" data-task-id="dn23buIRSr5A7BdG1ZS6tF"
+                td
+                  input.ui-form-field.bulk-selection name="task_check_list[]" type="checkbox" value="dn23buIRSr5A7BdG1ZS6tF" /
+                td.text-left.small-text
+                  | 11/25/15
+                  br>/
+                  | 11:00am
+                td
+                  a.group-link href="/employer/tasks/show/cRK6OwIRSr5y8ieMg-44q7" title=("11:00am - 12:00pm: Edwin Simiyu")  Call
+                  br/
+                  span.small-status-text
+                td.text-left
+                  span
+                    a href="/employer/settings/view/aqVt1wzf0r5yrodG1ZS6tF"  Edwin Simiyu
+                td.text-left Me
+                td
+                  ul.actionmenu.actionmenu-standard.actionmenu-vertical.auto-resize.small
+                    li.actionmenu-item
+                      a href="#"  Action
+                      ul
+                        li
+                          a.complete_task.actionitem.menu-item-with-icon href="/employer/tasks/complete_task/dn23buIRSr5A7BdG1ZS6tF?back_to_referer=true&amp;escape=false&amp;type=upcoming"
+                            i.atsicon.atsicon-completed
+                            | Mark Completed
+                        li
+                          a.edit_task.actionitem.menu-item-with-icon href="/employer/tasks/edit/cRLcrgIRSr5y8ieMg-44q7?back_to_referer=true&amp;escape=false&amp;type=upcoming"
+                            i.atsicon.atsicon-ico_edit-task
+                            | Edit
+                        li
+                          a.delete_task.actionitem.menu-item-with-icon href="#"
+                            i.atsicon.atsicon-menu-del
+                            | Delete
+
+section.area-actions.row.collapse
+  .small-12.columns
+
+
+
+javascript:
+  $(document).ready(function() {
+   $("a#completed, a#reopen, a#deleted").click(function() {
+      onMarkAsClick($(this));
+      $('.actionmenu-opened').trigger('click');
+    });
+    $(".postpane-menu-item").click(function() {
+      onPostponeClick($j(this));
+      $('.actionmenu-opened').trigger('click');
+    });
+  });
