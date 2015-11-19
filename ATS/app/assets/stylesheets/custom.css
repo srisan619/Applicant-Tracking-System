@@ -37,3 +37,20 @@ div.bullet span.fa-mouse-pointer:before {
     color: #2c5b9c;
     padding: 5px;
 }
+
+span.fa-asterisk::before{
+    color: #57ba08;
+    font-size: 10px;
+    position: absolute;
+    right: 4px;
+    top: 7px;
+}
+
+button .fa-calendar{
+    color: #2e5caa;
+}
+
+#task_form footer span.fa-asterisk::before{
+    /*float: left;*/
+    /*position: static;*/
+}

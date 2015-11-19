@@ -345,7 +345,7 @@ section.area-help header h3,section.small-area h3,section.mini-area h3,table.rep
 .atsicon-completed:before{content:"\e010";}
 .atsicon-remove:before,.select2-container .select2-choice .select2-search-choice-close:before{content:"\e008";}
 .atsicon-deviantart:before{content:"\e656";}
-.atsicon-triangle-right:before,.ui-datepicker .ui-datepicker-next:before{content:"\e012";}
+/*.atsicon-triangle-right:before,.ui-datepicker .ui-datepicker-next:before{content:"\e012";}*/
 .atsicon-github:before{content:"\e657";}
 .atsicon-suggest:before{content:"\e005";}
 .atsicon-skype:before{content:"\e658";}
@@ -491,7 +491,8 @@ section.area-help header h3,section.small-area h3,section.mini-area h3,table.rep
 .atsicon-globe-area:before{content:"\e684";}
 .atsicon-coin-b:before,.atsicon-coin:before{content:"\e685";}
 .atsicon-coin-a:before,.atsicon-coin:after{content:"\e686";}
-.atsicon-arrow-left2:before,.ui-datepicker .ui-datepicker-prev:before{content:"\e009";}
+.atsicon-arrow-left2:before,
+/*.ui-datepicker .ui-datepicker-prev:before{content:"\e009";}*/
 .atsicon-transmission:before{content:"\e423";}
 .atsicon-menu-report:before{content:"\e695";}
 .atsicon-menu-note:before{content:"\e696";}
@@ -532,7 +533,7 @@ section.area-help header h3,section.small-area h3,section.mini-area h3,table.rep
 .atsicon-chevron-up:before{content:"\e69b";}
 .atsicon-chevron-right:before{content:"\e69c";}
 .atsicon{font-size:16px;vertical-align:middle;color:#ced4db;min-width:16px;}
-.atsicon-default,.sharable-link:before,.icon-checkbox-checked:before,.icon-checkbox-checked:after,.icon-checkbox-checked-status:after,.icon-checkbox:before,.icon-checkbox:after,.icon-checkbox-status:after,.icon-radio-checked:before,.icon-radio-checked:after,.icon-radio-checked-status:after,.icon-radio:before,.icon-radio:after,.icon-radio-status:after,.select-arrow,.select2-container.ui-select2 .select2-choice .select2-arrow b:after,span.marker:before,.ui-dialog .ui-dialog-titlebar-close .ui-button-icon-primary:before,.ui-datepicker .ui-datepicker-next,.ui-datepicker .ui-datepicker-prev,ul.actionmenu-standard>.actionmenu-item>.arrow-menu:after,ul.actionmenu .menu-item-with-icon .atsicon,.select2-container-multi.ui-form-field .select2-choices .select2-search-choice-close:before,.tags-field.ui-form-field.select2-container-multi .select2-choices .select2-search-choice-close:before,.omni-contacts .social-yahoo:after,.omni-contacts .social-outlook:after,.omni-contacts .social-gmail:before,.omni-contacts .social-gmail:after,.ratings-accept:before,.ratings-decline:before,.ratings-thumbs-up:before,.ratings-thumbs-down:before{font-family:'atsicon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.atsicon-default,.sharable-link:before,.icon-checkbox-checked:before,.icon-checkbox-checked:after,.icon-checkbox-checked-status:after,.icon-checkbox:before,.icon-checkbox:after,.icon-checkbox-status:after,.icon-radio-checked:before,.icon-radio-checked:after,.icon-radio-checked-status:after,.icon-radio:before,.icon-radio:after,.icon-radio-status:after,.select-arrow,.select2-container.ui-select2 .select2-choice .select2-arrow b:after,span.marker:before,.ui-dialog .ui-dialog-titlebar-close .ui-button-icon-primary:before,.ui-datepicker .ui-datepicker-next,.ui-datepicker .ui-datepicker-prev,ul.actionmenu-standard>.actionmenu-item>.arrow-menu:after,ul.actionmenu .menu-item-with-icon .atsicon,.select2-container-multi.ui-form-field .select2-choices .select2-search-choice-close:before,.tags-field.ui-form-field.select2-container-multi .select2-choices .select2-search-choice-close:before,.omni-contacts .social-yahoo:after,.omni-contacts .social-outlook:after,.omni-contacts .social-gmail:before,.omni-contacts .social-gmail:after,.ratings-accept:before,.ratings-decline:before,.ratings-thumbs-up:before,.ratings-thumbs-down:before{font-family:'sans-serif';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
 a .atsicon-ico-calendar,a .atsicon,button .atsicon-ico-calendar,button .atsicon{color:#2e5caa;}
 a:focus,button:focus{outline:none;}
 a:hover,.ui-dialog a:hover,a:active,button:hover,button:active{color:#3E7CE5;}
@@ -1395,7 +1396,7 @@ table th .atsicon-triangle-down,table th .atsicon-triangle-right,table th .ui-da
 .ui-datepicker .ui-datepicker-calendar td .ui-state-highlight{border:1px solid #d3d3d3;background-color:#2e5caa;color:#fff;opacity:0.3;}
 .ui-datepicker .ui-priority-secondary{opacity:1;filter:Alpha(Opacity=100);font-weight:normal;}
 .ui-datepicker .ui-datepicker-next,.ui-datepicker .ui-datepicker-prev{color:#99b7eb;font-size:12px;margin-top:6px;}
-.ui-datepicker .ui-datepicker-next span,.ui-datepicker .ui-datepicker-prev span{background:none;}
+/*.ui-datepicker .ui-datepicker-next span,.ui-datepicker .ui-datepicker-prev span{background:none;}*/
 .ui-datepicker .ui-datepicker-next.ui-state-hover,.ui-datepicker .ui-datepicker-prev.ui-state-hover{background:none;border:none;top:0;right:0;color:#fff;}
 .ui-datepicker .ui-datepicker-prev{top:0;left:7px;}
 .ui-datepicker .ui-datepicker-next{top:0;right:0;}

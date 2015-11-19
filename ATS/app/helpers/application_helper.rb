@@ -10,4 +10,12 @@ module ApplicationHelper
       ""
     end
   end
+
+  def get_task_categories
+    TaskCategory.all.map{|c| [c.name, c.id]}
+  end
+
+  def get_users
+    User.all.map{|c| [c.first_name, c.id]}
+  end
 end

@@ -5,3 +5,5 @@
 #
 packages = Package.create([{ name: 'Free', amount: 0 }, { name: 'Plus', amount: 99 }, { name: 'Premium', amount: 249}, { name: 'Enterprise', amount: 499}])
 
+#task_categories = TaskCategory.create([ {name: 'Call', priority_order: 1}, {name: 'Email', priority_order: 2}, {name: 'Phone Screen', priority_order: 3}, {name: 'Interview', priority_order: 4}, {name: 'Follow-up', priority_order: 5} ])
+

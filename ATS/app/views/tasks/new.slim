@@ -1,8 +1,6 @@
 #fieldWithErrors.hidden
-form#task_form accept-charset="UTF-8" action="/employer/tasks/create" method="post" name="task_form"
+= form_for @task, html: { method: 'POST', id: 'task_form' } do |f|
   div style="margin:0;padding:0;display:inline"
-    input name="utf8" type="hidden" value="✓" /
-    input name="authenticity_token" type="hidden" value="IImnzEU3ixeWG+rbBjJLRjaN73pY2MIgHK1/xrADBSo=" /
   section.area-container
     main
       header.secondary
@@ -12,58 +10,63 @@ form#task_form accept-charset="UTF-8" action="/employer/tasks/create" method="po
         header
           h3 Task
         main
-          input name="referral_type" type="hidden" value="" /
-          input name="page" type="hidden" value="" /
-          input name="sort" type="hidden" value="" /
-          input#task_group_timezone_id name="task_group[timezone_id]" type="hidden" value=("Pacific Time (US &amp; Canada)") /
+          /input name="referral_type" type="hidden" value="" /
+          /input name="page" type="hidden" value="" /
+          /input name="sort" type="hidden" value="" /
+          /input#task_group_timezone_id name="task_group[timezone_id]" type="hidden" value=("Pacific Time (US &amp; Canada)") /
           .form
             .row
               .small-1-5.columns
                 label for="task_group_category_string"  Category:
-                span.marker.required
+                span.fa.fa-asterisk
               .small-3.columns
-                select#task_group_category_string.js-select.short name="task_group[category_string]"
-                  option value=""  - select -
-                  option value="Call"  Call
-                  option value="Email"  Email
-                  option value=("Phone Screen")  Phone Screen
-                  option value="Interview"  Interview
-                  option value="Follow-up"  Follow-up
+                = f.select(:task_category_id, options_for_select(get_task_categories, @task.new_record? ? '' : @task.task_category_id).html_safe, { :prompt => '- select -' }, {id: 'task_group_category_string', class: 'short'})
               .small-1-5.columns
                 label for="assignees_0_tasks_0_id"  User:
-                span.marker.required
+                span.fa.fa-asterisk
               .small-3.columns
-                select#assignees_0_tasks_0_id.ui-form-field.js-select data-disable-autofill="false" name="assignees[0][tasks][0][id]"
-                  option selected="selected" value="cfBMwuAPGr5zsRdG1ZS6tF"  Edwin Simiyu
-                  option value="asWHoqFzSr5BUaeMg-44q7"  user 2
+                = f.select(:user_id, options_for_select(get_users, @task.new_record? ? '' : @task.user_id).html_safe, { :prompt => '- select -' }, {id: 'task_group_category_string', class: 'ui-form-field'})
+
               .small-2-5.columns
                 div
-                  input name="task_group[send_email]" type="hidden" value="0" /
-                  input#task_group_send_email.ui-form-field name="task_group[send_email]" type="checkbox" value="1" /
+                  /input name="task_group[send_email]" type="hidden" value="0" /
+                  = f.check_box :is_email_notify, {id: 'task_group_send_email', class: 'ui-form-field' }
                   label.send_email_label.ui-form-field for="task_group_send_email"  Notify by email
             .row
               .small-1-5.columns
                 label for="task_group_subject"  Subject:
-                span.marker.required
+                span.fa.fa-asterisk
               .small-10-5.columns
-                input#task_group_subject.ui-form-field.full data-disable-autofill="false" name="task_group[subject]" size="30" type="text" /
+                = f.text_field :subject, id: 'task_group_subject', class: 'ui-form-field full', size: "30"
             .row
               .small-1-5.columns
                 label for="task_group_due_date"  Date:
-                span.marker.required
+                span.fa.fa-asterisk
               .small-3.columns
-                input#task_group_due_date.js-calendar.ui-form-field data-min-date="11/18/2015" name="task_group[due_date]" size="12" type="text" value="11/19/2015" /
+                = f.text_field :task_date, id: 'task_group_due_date', class: 'ui-form-field', size: '12'
+                /input#task_group_due_date.ui-form-field data-min-date="11/18/2015" name="task_group[due_date]" size="12" type="text" value="11/19/2015" /
+                button.ui-datepicker-trigger type="button"
+                  i.fa.fa-calendar
               .small-1-5.columns
                 | Time:
-                span.marker.required
+                span.fa.fa-asterisk
               .small-6.columns
                 .datepair data-time-delta="3600"
-                  input#assignee_0_start_time.time.small.start.ui-form-field.ui-timepicker-input autocomplete="off" max-length="7" name="assignees[0][start_time]" placeholder="Start" type="text" value="" /
-                  | to
-                  input#assignee_0_end_time.time.small.end.ui-form-field.ui-timepicker-input autocomplete="off" max-length="7" name="assignees[0][end_time]" placeholder="End" type="text" value="" /
+              /    input#assignee_0_start_time.time.small.start.ui-form-field.ui-timepicker-input autocomplete="off" max-length="7" name="assignees[0][start_time]" placeholder="Start" type="text" value="" /
+              /    | to
+              /    input#assignee_0_end_time.time.small.end.ui-form-field.ui-timepicker-input autocomplete="off" max-length="7" name="assignees[0][end_time]" placeholder="End" type="text" value="" /
     footer
       div
-        span.marker.required
+        span.fa.fa-asterisk
         | Required Fields &nbsp;
         a.submitCancel.form-button href="/employer/tasks/list"  Cancel
         button#add_button.form-button.green name="add" type="submit"  Add
+
+
+javascript:
+  $(function() {
+   $( "#task_group_due_date" ).datepicker({
+    changeMonth: true,
+    changeYear: true
+   });
+  });
