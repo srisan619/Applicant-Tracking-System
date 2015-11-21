@@ -36,55 +36,32 @@ section.area-container
           table.default-table
             thead
               tr
-                th width="25"
-                  input.ui-form-field.bulk-selection-all name="checkall" onclick="checkUncheckAll(this)" type="checkbox" value="xxx" /
                 th.text-left width="10%"
-                  a.sorter-title href="/employer/tasks/list?filter%5Bsort_by%5D=0&amp;filter%5Bsort_order%5D=DESC&amp;type=upcoming"
                     span Due Date
-                  .sortable-icons.asc
                 th.text-left width="120"
-                  a.sorter-title href="/employer/tasks/list?filter%5Bsort_by%5D=1&amp;type=upcoming"
                     span Category
-                  .sortable-icons
                 th width="440"
-                  a.sorter-title href="/employer/tasks/list?filter%5Bsort_by%5D=2&amp;type=upcoming"
                     span Text
-                  .sortable-icons
                 th.text-left width="120"
-                  a.sorter-title href="/employer/tasks/list?filter%5Bsort_by%5D=3&amp;type=upcoming"
                     span Assigned By
-                  .sortable-icons
                 th.actions.text-left Action
             tbody
-              tr data-group-description=("11:00am - 12:00pm: Edwin Simiyu") data-slot-id="cRLcrgIRSr5y8ieMg-44q7" data-task-id="dn23buIRSr5A7BdG1ZS6tF"
-                td
-                  input.ui-form-field.bulk-selection name="task_check_list[]" type="checkbox" value="dn23buIRSr5A7BdG1ZS6tF" /
-                td.text-left.small-text
-                  | 11/25/15
-                  br>/
-                  | 11:00am
-                td
-                  a.group-link href="/employer/tasks/show/cRK6OwIRSr5y8ieMg-44q7" title=("11:00am - 12:00pm: Edwin Simiyu")  Call
-                  br/
-                  span.small-status-text
-                td.text-left
-                  span
-                    a href="/employer/settings/view/aqVt1wzf0r5yrodG1ZS6tF"  Edwin Simiyu
-                td.text-left Me
-                td
-                  ul.actionmenu.actionmenu-standard.actionmenu-vertical.auto-resize.small
-                    li.actionmenu-item
-                      a href="#"  Action
-                      ul
-                        li
-                          a.complete_task.actionitem.menu-item-with-icon href="/employer/tasks/complete_task/dn23buIRSr5A7BdG1ZS6tF?back_to_referer=true&amp;escape=false&amp;type=upcoming"
-                            i.atsicon.atsicon-completed
-                            | Mark Completed
-                        li
-                          a.edit_task.actionitem.menu-item-with-icon href="/employer/tasks/edit/cRLcrgIRSr5y8ieMg-44q7?back_to_referer=true&amp;escape=false&amp;type=upcoming"
-                            i.atsicon.atsicon-ico_edit-task
-                            | Edit
-                        li
-                          a.delete_task.actionitem.menu-item-with-icon href="#"
-                            i.atsicon.atsicon-menu-del
-                            | Delete
+              - @tasks.each do |task|
+                tr
+                  td.text-left.small-text
+                    | "#{task.task_date}"
+                    br/
+                    | "#{task.start_time.strftime("%H:%M")}"
+                  td
+                    = task.task_category.try(:name)
+                    br/
+                    span.small-status-text
+                  td.text-left
+                    span
+                      = task.user.try(:first_name)
+                  td.text-left
+                    = current_user.first_name
+                  td
+                    = link_to 'Edit Task', edit_task_path(task)
+                    |  |
+                    = link_to 'Delete Task', task_path(task), method: 'delete', confirm: 'Are you want to delete task ?'

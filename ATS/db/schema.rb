@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20151118090848) do
     t.datetime "start_time"
     t.datetime "end_time"
     t.integer  "candidate_id",     limit: 4
-    t.string   "status",           limit: 255
+    t.string   "status",           limit: 255,   default: "new"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

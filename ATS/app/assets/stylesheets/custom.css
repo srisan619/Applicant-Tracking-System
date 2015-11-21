@@ -46,11 +46,15 @@ span.fa-asterisk::before{
     top: 7px;
 }
 
-button .fa-calendar{
+#task_form .fa-calendar{
     color: #2e5caa;
 }
 
 #task_form footer span.fa-asterisk::before{
     /*float: left;*/
     /*position: static;*/
+}
+
+#task_group_send_email{
+    margin: 0 5px 0 0;
 }

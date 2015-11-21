@@ -30,7 +30,7 @@
               .small-2-5.columns
                 div
                   /input name="task_group[send_email]" type="hidden" value="0" /
-                  = f.check_box :is_email_notify, {id: 'task_group_send_email', class: 'ui-form-field' }
+                  = f.check_box :is_email_notify, id: 'task_group_send_email'
                   label.send_email_label.ui-form-field for="task_group_send_email"  Notify by email
             .row
               .small-1-5.columns
@@ -45,13 +45,17 @@
               .small-3.columns
                 = f.text_field :task_date, id: 'task_group_due_date', class: 'ui-form-field', size: '12'
                 /input#task_group_due_date.ui-form-field data-min-date="11/18/2015" name="task_group[due_date]" size="12" type="text" value="11/19/2015" /
-                button.ui-datepicker-trigger type="button"
+                .ui-datepicker-trigger{style="margin: -22px 85px;" }
                   i.fa.fa-calendar
               .small-1-5.columns
                 | Time:
                 span.fa.fa-asterisk
               .small-6.columns
                 .datepair data-time-delta="3600"
+
+                  = f.time_select :start_time, {minute_step: 30, :simple_time_select => true, :time_separator => ""}, class: 'time small start ui-form-field ui-timepicker-input'
+                  = "To"
+                  = f.time_select :end_time, {minute_step: 30, :simple_time_select => true, :time_separator => ""}, class: 'time small end ui-form-field ui-timepicker-input'
               /    input#assignee_0_start_time.time.small.start.ui-form-field.ui-timepicker-input autocomplete="off" max-length="7" name="assignees[0][start_time]" placeholder="Start" type="text" value="" /
               /    | to
               /    input#assignee_0_end_time.time.small.end.ui-form-field.ui-timepicker-input autocomplete="off" max-length="7" name="assignees[0][end_time]" placeholder="End" type="text" value="" /
@@ -59,13 +63,14 @@
       div
         span.fa.fa-asterisk
         | Required Fields &nbsp;
-        a.submitCancel.form-button href="/employer/tasks/list"  Cancel
-        button#add_button.form-button.green name="add" type="submit"  Add
+        a.submitCancel.form-button href="/employer/tasks"  Cancel
+        /button#add_button.form-button.green name="add" type="submit"  Add
+        = f.submit 'Add', class: 'form-button green', id: 'add_button'
 
 
 javascript:
   $(function() {
-   $( "#task_group_due_date" ).datepicker({
+   $( "#task_group_due_date, .fa-calendar" ).datepicker({
     changeMonth: true,
     changeYear: true
    });

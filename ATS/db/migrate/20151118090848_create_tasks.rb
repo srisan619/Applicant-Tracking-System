@@ -9,7 +9,7 @@ class CreateTasks < ActiveRecord::Migration
       t.datetime :start_time
       t.datetime :end_time
       t.integer :candidate_id
-      t.string :status
+      t.string :status, default: 'new'
       t.timestamps
     end
   end

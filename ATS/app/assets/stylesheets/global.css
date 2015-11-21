@@ -3655,7 +3655,7 @@ input.fileupload{position:absolute;top:-6px;right:-6px;width:250px;height:20px;m
   padding-bottom: 5px; }
 .tasks .columns.task-job-title, .add_feedback .columns.task-job-title {
   padding-top: 8px; }
-.tasks input.time.small, .add_feedback input.time.small {
+#task_form select.time.small, .add_feedback input.time.small {
   width: 97px; }
 .tasks .js-calendar, .add_feedback .js-calendar {
   width: 167px; }
