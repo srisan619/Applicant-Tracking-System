@@ -58,3 +58,8 @@ span.fa-asterisk::before{
 #task_group_send_email{
     margin: 0 5px 0 0;
 }
+
+a.fa-pencil-square-o, a.fa-trash-o{
+    display: inline !important;
+    font-size: 18px;
+}

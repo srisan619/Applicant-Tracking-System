@@ -1368,7 +1368,7 @@ table th .atsicon-triangle-down,table th .atsicon-triangle-right,table th .ui-da
 .notification ul:not(:last-child){margin-bottom:15px;}
 .notification ul li{padding-bottom:2px;}
 .notification.success-box{border:1px solid #5a8b42;background-color:#F4F6F3;}
-.notification.success-box i.atsicon{color:#5a8b42;font-size:19px;}
+.notification.success-box i.fa-check{color:#5a8b42;font-size:19px;}
 .notification.success-box li:before{color:#4E9908;}
 .notification.success-box .content{vertical-align:bottom;}
 .notification.info-box{border:1px solid #3566B9;background-color:white;}
