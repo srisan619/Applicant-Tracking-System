@@ -1,0 +1,57 @@
+section.area-container
+  header.secondary
+    hgroup
+      h1 Candidate Manager
+    nav
+      a.button.js-btn-with-icon href="/employer/candidates/new"
+        i.fa.fa-users
+        span.text Add Candidate
+
+  div style="margin:0;padding:0;display:inline"
+    input name="utf8" type="hidden" value="✓" /
+  section.area-container
+
+  main
+    section.area.list.table-area
+      main
+        .row.collapse
+          .small-12.columns
+            table.default-table.candidate-list{style="font-size: 12px" }
+              thead
+                tr
+                  th width="22%"
+                    span Candidate
+                  th width="23%"
+                    span Job
+                  th width="8%"
+                    span Received
+                  th.text-center width="6%"
+                    | Miles
+                  th width="11%"
+                    span Source
+                  th width="6%"
+                    | Activity
+                  th width="14%"
+                    span Action
+              tbody.ui-toggle-container.js-toggle
+                tr.job_applications
+                  td.small-line
+                    test test
+                    span.icon-margin-helper
+                  td.small-line.text-middle
+                    dsfsdf
+                  td
+                    | 11/14/15
+                  td.text-center
+                    | n/a
+                  td.small-text.small-line
+                    span Company Website
+                  td.small-text.small-line
+                    #activity
+                      a href="/employer/candidate/view/bzYC5-IR4r5AWrdG1ZS6tF?sub=view_notes"  0 notes
+                      br/
+                      a href="/employer/candidate/view/bzYC5-IR4r5AWrdG1ZS6tF?sub=view_tasks"  0 tasks
+                      br/
+                      a href="/employer/candidate/view/bzYC5-IR4r5AWrdG1ZS6tF?sub=view_emails"  0 emails
+                  td
+                    = 'Edit'

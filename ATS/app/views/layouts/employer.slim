@@ -82,7 +82,7 @@ body.welcome.show_welcome.modern
                 i.fa.fa-calendar-check-o
                 | TASKS
             li.candidate-item.actionmenu-item
-              a href="/employer/candidate"
+              a href="#{candidates_path}"
                 i.fa.fa-users
                 | CANDIDATES
             li.jobs-item.actionmenu-item
@@ -147,7 +147,7 @@ body.welcome.show_welcome.modern
               span.hide.js-throbber-top-search-candidate
                 = image_tag "throbber_vertical_active.gif"
   #container
-    .notification.flash.success-box
+    .notification.flash.success-box.hide
       .icon
         i.fa.fa-check
       .content
