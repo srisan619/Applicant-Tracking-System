@@ -1677,137 +1677,137 @@ input.fileupload{position:absolute;top:-6px;right:-6px;width:250px;height:20px;m
 .sessions .warning,.sso_sessions .warning,.forgot_passwords .warning{border-color:#F3CB48;background:#fffbf1;}
 .sessions .success,.sso_sessions .success,.forgot_passwords .success{border-color:#5a8b42;background:#F4F6F3;}
 .sessions .notice,.sso_sessions .notice,.forgot_passwords .notice{border-color:#306ec3;background-color:#EBF3FF;}
-.candidate.new section.area>main,.candidate.new section.small-area>main,.candidate.new section.mini-area>main{padding-left:20px;padding-right:20px;}
-.candidate.new section{min-height:57px;}
-.candidate.new .upload-button{display:block;}
-.candidate.new .dropzone-instructions{display:block;min-height:128px;}
+#add-candidates-app section.area>main,#add-candidates-app section.small-area>main,#add-candidates-app section.mini-area>main{padding-left:20px;padding-right:20px;}
+#add-candidates-app section{min-height:57px;}
+#add-candidates-app .upload-button{display:block;}
+#add-candidates-app .dropzone-instructions{display:block;min-height:128px;}
 .candidate.edit .columns.source-column{padding-left:10px;}
-.candidate.new,.candidate.edit{@-moz-document url-prefix() { .scrollArea table th .box { border-right: none;}
+#add-candidates-app,.candidate.edit{@-moz-document url-prefix() { .scrollArea table th .box { border-right: none;}
                                }
 }
 
-.candidate.new .candidate-contact-area .columns:nth-child(4n+3), .candidate.edit .candidate-contact-area .columns:nth-child(4n+3) {
+#add-candidates-app .candidate-contact-area .columns:nth-child(4n+3), .candidate.edit .candidate-contact-area .columns:nth-child(4n+3) {
     padding-left: 10px; }
-  .candidate.new .candidate-contact-area .columns:nth-child(4n+4), .candidate.edit .candidate-contact-area .columns:nth-child(4n+4) {
+  #add-candidates-app .candidate-contact-area .columns:nth-child(4n+4), .candidate.edit .candidate-contact-area .columns:nth-child(4n+4) {
     padding-right: 0; }
-  .candidate.new .candidate-contact-area .columns:last-child:nth-child(4n+2), .candidate.edit .candidate-contact-area .columns:last-child:nth-child(4n+2) {
+  #add-candidates-app .candidate-contact-area .columns:last-child:nth-child(4n+2), .candidate.edit .candidate-contact-area .columns:last-child:nth-child(4n+2) {
     float: left;
     padding-right: 10px; }
-  .candidate.new .candidate-employer-row:first-child > td, .candidate.new .candidate-education-row:first-child > td, .candidate.edit .candidate-employer-row:first-child > td, .candidate.edit .candidate-education-row:first-child > td {
+  #add-candidates-app .candidate-employer-row:first-child > td, #add-candidates-app .candidate-education-row:first-child > td, .candidate.edit .candidate-employer-row:first-child > td, .candidate.edit .candidate-education-row:first-child > td {
     padding-top: 3px; }
-  .candidate.new .source-column, .candidate.edit .source-column {
+  #add-candidates-app .source-column, .candidate.edit .source-column {
     padding-right: 0; }
-  .candidate.new .candidate-links .select2-results, .candidate.edit .candidate-links .select2-results {
+  #add-candidates-app .candidate-links .select2-results, .candidate.edit .candidate-links .select2-results {
     max-height: 300px; }
-    .candidate.new .candidate-links .select2-results li:nth-child(5), .candidate.edit .candidate-links .select2-results li:nth-child(5) {
+    #add-candidates-app .candidate-links .select2-results li:nth-child(5), .candidate.edit .candidate-links .select2-results li:nth-child(5) {
       border-bottom: 1px solid #ced4db;
       margin-bottom: 2px;
       padding-bottom: 2px; }
-  .candidate.new .import-button, .candidate.edit .import-button {
+  #add-candidates-app .import-button, .candidate.edit .import-button {
     padding: 6px 6px 6px 11px;
     text-align: left;
     margin-right: 2px;
     margin-bottom: 10px;
     font-size: 14px; }
-    .candidate.new .import-button .text, .candidate.edit .import-button .text {
+    #add-candidates-app .import-button .text, .candidate.edit .import-button .text {
       font-size: 14px;
       line-height: 10px;
       margin-left: 8px; }
-  .candidate.new .button.tall i, .candidate.new a.tall.connect-network i, .candidate.new .ui-datepicker .ui-datepicker-buttonpane > button.tall i, .ui-datepicker .candidate.new .ui-datepicker-buttonpane > button.tall i, .candidate.new .job_applications #share-celebration .tall.hire-celebration-share-button i, .job_applications #share-celebration .candidate.new .tall.hire-celebration-share-button i, .candidate.edit .button.tall i, .candidate.edit a.tall.connect-network i, .candidate.edit .ui-datepicker .ui-datepicker-buttonpane > button.tall i, .ui-datepicker .candidate.edit .ui-datepicker-buttonpane > button.tall i, .candidate.edit .job_applications #share-celebration .tall.hire-celebration-share-button i, .job_applications #share-celebration .candidate.edit .tall.hire-celebration-share-button i {
+  #add-candidates-app .button.tall i, #add-candidates-app a.tall.connect-network i, #add-candidates-app .ui-datepicker .ui-datepicker-buttonpane > button.tall i, .ui-datepicker #add-candidates-app .ui-datepicker-buttonpane > button.tall i, #add-candidates-app .job_applications #share-celebration .tall.hire-celebration-share-button i, .job_applications #share-celebration #add-candidates-app .tall.hire-celebration-share-button i, .candidate.edit .button.tall i, .candidate.edit a.tall.connect-network i, .candidate.edit .ui-datepicker .ui-datepicker-buttonpane > button.tall i, .ui-datepicker .candidate.edit .ui-datepicker-buttonpane > button.tall i, .candidate.edit .job_applications #share-celebration .tall.hire-celebration-share-button i, .job_applications #share-celebration .candidate.edit .tall.hire-celebration-share-button i {
     margin-right: 13px; }
-  .candidate.new .button.full:hover i, .candidate.new a.full.connect-network:hover i, .candidate.new .ui-datepicker .ui-datepicker-buttonpane > button.full:hover i, .ui-datepicker .candidate.new .ui-datepicker-buttonpane > button.full:hover i, .candidate.new .job_applications #share-celebration .full.hire-celebration-share-button:hover i, .job_applications #share-celebration .candidate.new .full.hire-celebration-share-button:hover i, .candidate.edit .button.full:hover i, .candidate.edit a.full.connect-network:hover i, .candidate.edit .ui-datepicker .ui-datepicker-buttonpane > button.full:hover i, .ui-datepicker .candidate.edit .ui-datepicker-buttonpane > button.full:hover i, .candidate.edit .job_applications #share-celebration .full.hire-celebration-share-button:hover i, .job_applications #share-celebration .candidate.edit .full.hire-celebration-share-button:hover i {
+  #add-candidates-app .button.full:hover i, #add-candidates-app a.full.connect-network:hover i, #add-candidates-app .ui-datepicker .ui-datepicker-buttonpane > button.full:hover i, .ui-datepicker #add-candidates-app .ui-datepicker-buttonpane > button.full:hover i, #add-candidates-app .job_applications #share-celebration .full.hire-celebration-share-button:hover i, .job_applications #share-celebration #add-candidates-app .full.hire-celebration-share-button:hover i, .candidate.edit .button.full:hover i, .candidate.edit a.full.connect-network:hover i, .candidate.edit .ui-datepicker .ui-datepicker-buttonpane > button.full:hover i, .ui-datepicker .candidate.edit .ui-datepicker-buttonpane > button.full:hover i, .candidate.edit .job_applications #share-celebration .full.hire-celebration-share-button:hover i, .job_applications #share-celebration .candidate.edit .full.hire-celebration-share-button:hover i {
     opacity: 0.6; }
-  .candidate.new .button.full .text, .candidate.new a.full.connect-network .text, .candidate.new .ui-datepicker .ui-datepicker-buttonpane > button.full .text, .ui-datepicker .candidate.new .ui-datepicker-buttonpane > button.full .text, .candidate.new .job_applications #share-celebration .full.hire-celebration-share-button .text, .job_applications #share-celebration .candidate.new .full.hire-celebration-share-button .text, .candidate.edit .button.full .text, .candidate.edit a.full.connect-network .text, .candidate.edit .ui-datepicker .ui-datepicker-buttonpane > button.full .text, .ui-datepicker .candidate.edit .ui-datepicker-buttonpane > button.full .text, .candidate.edit .job_applications #share-celebration .full.hire-celebration-share-button .text, .job_applications #share-celebration .candidate.edit .full.hire-celebration-share-button .text {
+  #add-candidates-app .button.full .text, #add-candidates-app a.full.connect-network .text, #add-candidates-app .ui-datepicker .ui-datepicker-buttonpane > button.full .text, .ui-datepicker #add-candidates-app .ui-datepicker-buttonpane > button.full .text, #add-candidates-app .job_applications #share-celebration .full.hire-celebration-share-button .text, .job_applications #share-celebration #add-candidates-app .full.hire-celebration-share-button .text, .candidate.edit .button.full .text, .candidate.edit a.full.connect-network .text, .candidate.edit .ui-datepicker .ui-datepicker-buttonpane > button.full .text, .ui-datepicker .candidate.edit .ui-datepicker-buttonpane > button.full .text, .candidate.edit .job_applications #share-celebration .full.hire-celebration-share-button .text, .job_applications #share-celebration .candidate.edit .full.hire-celebration-share-button .text {
     vertical-align: middle; }
-  .candidate.new .atsicon-ico_email::before, .candidate.edit .atsicon-ico_email::before {
+  #add-candidates-app .atsicon-ico_email::before, .candidate.edit .atsicon-ico_email::before {
     font-size: 20px; }
-  .candidate.new .scrollableContainer, .candidate.edit .scrollableContainer {
+  #add-candidates-app .scrollableContainer, .candidate.edit .scrollableContainer {
     height: 250px; }
-  .candidate.new .scrollableContainer .headerSpacer, .candidate.new .scrollArea, .candidate.edit .scrollableContainer .headerSpacer, .candidate.edit .scrollArea {
+  #add-candidates-app .scrollableContainer .headerSpacer, #add-candidates-app .scrollArea, .candidate.edit .scrollableContainer .headerSpacer, .candidate.edit .scrollArea {
     border: none; }
-  .candidate.new .scrollArea table th .box, .candidate.edit .scrollArea table th .box {
+  #add-candidates-app .scrollArea table th .box, .candidate.edit .scrollArea table th .box {
     padding: 0;
     border-left: none; }
-  .candidate.new .scrollArea table tbody tr:last-child td, .candidate.new .scrollArea table tbody tr td, .candidate.edit .scrollArea table tbody tr:last-child td, .candidate.edit .scrollArea table tbody tr td {
+  #add-candidates-app .scrollArea table tbody tr:last-child td, #add-candidates-app .scrollArea table tbody tr td, .candidate.edit .scrollArea table tbody tr:last-child td, .candidate.edit .scrollArea table tbody tr td {
     border-bottom: none; }
-  .candidate.new .resume-jobs-filter, .candidate.edit .resume-jobs-filter {
+  #add-candidates-app .resume-jobs-filter, .candidate.edit .resume-jobs-filter {
     display: inline-block; }
-    .candidate.new .resume-jobs-filter input, .candidate.edit .resume-jobs-filter input {
+    #add-candidates-app .resume-jobs-filter input, .candidate.edit .resume-jobs-filter input {
       padding-right: 25px; }
-    .candidate.new .resume-jobs-filter .search-icon, .candidate.edit .resume-jobs-filter .search-icon {
+    #add-candidates-app .resume-jobs-filter .search-icon, .candidate.edit .resume-jobs-filter .search-icon {
       left: 360px;
       position: absolute; }
-  .candidate.new .inline-dropzone .spinner img, .candidate.edit .inline-dropzone .spinner img {
+  #add-candidates-app .inline-dropzone .spinner img, .candidate.edit .inline-dropzone .spinner img {
     height: 20px;
     margin-bottom: 5px; }
-  .candidate.new .form-button.large, .candidate.edit .form-button.large {
+  #add-candidates-app .form-button.large, .candidate.edit .form-button.large {
     width: 100%;
     height: 100%;
     min-height: 100px;
     padding: 20px;
     background: #306ec3;
     font-size: 24px; }
-    .candidate.new .form-button.large .subtitle, .candidate.edit .form-button.large .subtitle {
+    #add-candidates-app .form-button.large .subtitle, .candidate.edit .form-button.large .subtitle {
       font-size: 16px;
       line-height: 16px; }
-  .candidate.new .omni-icon, .candidate.edit .omni-icon {
+  #add-candidates-app .omni-icon, .candidate.edit .omni-icon {
     font-size: 44px;
     margin: 0px 16px; }
-  .candidate.new .social-icon, .candidate.edit .social-icon {
+  #add-candidates-app .social-icon, .candidate.edit .social-icon {
     width: 25px;
     display: inline-block;
     font-size: 18px; }
-  .candidate.new .social-icon.atsicon-ico_jobs1, .candidate.edit .social-icon.atsicon-ico_jobs1 {
+  #add-candidates-app .social-icon.atsicon-ico_jobs1, .candidate.edit .social-icon.atsicon-ico_jobs1 {
     font-size: 17px; }
-  .candidate.new .social-icon.atsicon-globe-area, .candidate.edit .social-icon.atsicon-globe-area {
+  #add-candidates-app .social-icon.atsicon-globe-area, .candidate.edit .social-icon.atsicon-globe-area {
     font-size: 21px; }
-  .candidate.new .select2-highlighted i, .candidate.edit .select2-highlighted i {
+  #add-candidates-app .select2-highlighted i, .candidate.edit .select2-highlighted i {
     color: white !important; }
-  .candidate.new .button-separator, .candidate.edit .button-separator {
+  #add-candidates-app .button-separator, .candidate.edit .button-separator {
     color: #aeaeae;
     padding: 10px 0;
     font-size: 16px; }
-  .candidate.new .dropzone-errors, .candidate.edit .dropzone-errors {
+  #add-candidates-app .dropzone-errors, .candidate.edit .dropzone-errors {
     color: #FF0000; }
-  .candidate.new .with-control header, .candidate.edit .with-control header {
+  #add-candidates-app .with-control header, .candidate.edit .with-control header {
     margin-left: 20px !important; }
-    .candidate.new .with-control header .icon-checkbox-text, .candidate.edit .with-control header .icon-checkbox-text {
+    #add-candidates-app .with-control header .icon-checkbox-text, .candidate.edit .with-control header .icon-checkbox-text {
       padding-left: 6px; }
-    .candidate.new .with-control header .icon-checkbox-checked:before, .candidate.new .with-control header .icon-checkbox-checked:after, .candidate.new .with-control header .icon-checkbox-checked-status:after, .candidate.new .with-control header .icon-checkbox:before, .candidate.new .with-control header .icon-checkbox:after, .candidate.new .with-control header .icon-checkbox-status:after, .candidate.edit .with-control header .icon-checkbox-checked:before, .candidate.edit .with-control header .icon-checkbox-checked:after, .candidate.edit .with-control header .icon-checkbox-checked-status:after, .candidate.edit .with-control header .icon-checkbox:before, .candidate.edit .with-control header .icon-checkbox:after, .candidate.edit .with-control header .icon-checkbox-status:after {
+    #add-candidates-app .with-control header .icon-checkbox-checked:before, #add-candidates-app .with-control header .icon-checkbox-checked:after, #add-candidates-app .with-control header .icon-checkbox-checked-status:after, #add-candidates-app .with-control header .icon-checkbox:before, #add-candidates-app .with-control header .icon-checkbox:after, #add-candidates-app .with-control header .icon-checkbox-status:after, .candidate.edit .with-control header .icon-checkbox-checked:before, .candidate.edit .with-control header .icon-checkbox-checked:after, .candidate.edit .with-control header .icon-checkbox-checked-status:after, .candidate.edit .with-control header .icon-checkbox:before, .candidate.edit .with-control header .icon-checkbox:after, .candidate.edit .with-control header .icon-checkbox-status:after {
       font-size: 18px !important;
       margin-top: -5px; }
-  .candidate.new .grid-form .referred-by-source-column:last-child, .candidate.edit .grid-form .referred-by-source-column:last-child {
+  #add-candidates-app .grid-form .referred-by-source-column:last-child, .candidate.edit .grid-form .referred-by-source-column:last-child {
     float: left;
     padding-right: 10px; }
-  .candidate.new .max-files-warning, .candidate.edit .max-files-warning {
+  #add-candidates-app .max-files-warning, .candidate.edit .max-files-warning {
     color: #5a5a5a;
     display: block;
     font-style: italic;
     line-height: 6px; }
-  .candidate.new .recipients div:first-child, .candidate.new .recipients label, .candidate.edit .recipients div:first-child, .candidate.edit .recipients label {
+  #add-candidates-app .recipients div:first-child, #add-candidates-app .recipients label, .candidate.edit .recipients div:first-child, .candidate.edit .recipients label {
     line-height: 13px; }
-  .candidate.new .recipients .required, .candidate.edit .recipients .required {
+  #add-candidates-app .recipients .required, .candidate.edit .recipients .required {
     top: 8px; }
-  .candidate.new .recipients-select, .candidate.edit .recipients-select {
+  #add-candidates-app .recipients-select, .candidate.edit .recipients-select {
     margin-right: 10px;
     width: 85% !important; }
-  .candidate.new .instructions-row, .candidate.edit .instructions-row {
+  #add-candidates-app .instructions-row, .candidate.edit .instructions-row {
     margin-bottom: 7px; }
-  .candidate.new .ng-scope select, .candidate.edit .ng-scope select {
+  #add-candidates-app .ng-scope select, .candidate.edit .ng-scope select {
     visibility: hidden; }
-  .candidate.new .select2-default > .select2-chosen, .candidate.edit .select2-default > .select2-chosen {
+  #add-candidates-app .select2-default > .select2-chosen, .candidate.edit .select2-default > .select2-chosen {
     color: #A9A9A9; }
-  .candidate.new .ui-select2.ng-invalid > ul, .candidate.new .ui-select2.ng-invalid > a, .candidate.new .ui-select2.ng-invalid > a > .select2-arrow, .candidate.new input.ng-invalid, .candidate.edit .ui-select2.ng-invalid > ul, .candidate.edit .ui-select2.ng-invalid > a, .candidate.edit .ui-select2.ng-invalid > a > .select2-arrow, .candidate.edit input.ng-invalid {
+  #add-candidates-app .ui-select2.ng-invalid > ul, #add-candidates-app .ui-select2.ng-invalid > a, #add-candidates-app .ui-select2.ng-invalid > a > .select2-arrow, #add-candidates-app input.ng-invalid, .candidate.edit .ui-select2.ng-invalid > ul, .candidate.edit .ui-select2.ng-invalid > a, .candidate.edit .ui-select2.ng-invalid > a > .select2-arrow, .candidate.edit input.ng-invalid {
     background-color: #F6ECEC;
     color: black;
     border-color: #b4b5b0;
     box-shadow: inset 1px 1px 2px #efc5c5; }
-  .candidate.new .ui-select2.ng-invalid > a > .select2-arrow, .candidate.edit .ui-select2.ng-invalid > a > .select2-arrow {
+  #add-candidates-app .ui-select2.ng-invalid > a > .select2-arrow, .candidate.edit .ui-select2.ng-invalid > a > .select2-arrow {
     box-shadow: inset -2px 3px 3px -2px #efc5c5; }
-  .candidate.new #add-user-dialog .ui-select2.ng-pristine > ul, .candidate.new #add-user-dialog .ui-select2.ng-pristine > a, .candidate.new #add-user-dialog .ui-select2.ng-pristine > a > .select2-arrow, .candidate.new #add-user-dialog input.ng-pristine, .candidate.edit #add-user-dialog .ui-select2.ng-pristine > ul, .candidate.edit #add-user-dialog .ui-select2.ng-pristine > a, .candidate.edit #add-user-dialog .ui-select2.ng-pristine > a > .select2-arrow, .candidate.edit #add-user-dialog input.ng-pristine {
+  #add-candidates-app #add-user-dialog .ui-select2.ng-pristine > ul, #add-candidates-app #add-user-dialog .ui-select2.ng-pristine > a, #add-candidates-app #add-user-dialog .ui-select2.ng-pristine > a > .select2-arrow, #add-candidates-app #add-user-dialog input.ng-pristine, .candidate.edit #add-user-dialog .ui-select2.ng-pristine > ul, .candidate.edit #add-user-dialog .ui-select2.ng-pristine > a, .candidate.edit #add-user-dialog .ui-select2.ng-pristine > a > .select2-arrow, .candidate.edit #add-user-dialog input.ng-pristine {
     background-color: transparent;
     box-shadow: none; }
-  .candidate.new .loading-overlay, .candidate.edit .loading-overlay {
+  #add-candidates-app .loading-overlay, .candidate.edit .loading-overlay {
     background-color: #fff;
     bottom: 0;
     left: 0;
@@ -1815,54 +1815,54 @@ input.fileupload{position:absolute;top:-6px;right:-6px;width:250px;height:20px;m
     right: 0;
     top: 0;
     z-index: 2000; }
-    .candidate.new .loading-overlay .spinner, .candidate.edit .loading-overlay .spinner {
+    #add-candidates-app .loading-overlay .spinner, .candidate.edit .loading-overlay .spinner {
       left: 50%;
       position: absolute;
       top: 50%; }
-  .candidate.new .resume-preview, .candidate.new .dropzone-processing, .candidate.new .dropzone-resume-area, .candidate.edit .resume-preview, .candidate.edit .dropzone-processing, .candidate.edit .dropzone-resume-area {
+  #add-candidates-app .resume-preview, #add-candidates-app .dropzone-processing, #add-candidates-app .dropzone-resume-area, .candidate.edit .resume-preview, .candidate.edit .dropzone-processing, .candidate.edit .dropzone-resume-area {
     border: 1px solid #ced4db;
     text-align: center;
     border-radius: 3px;
     padding: 15px 10px 15px 10px;
     margin-bottom: 10px;
     background-color: white; }
-    .candidate.new .resume-preview .button, .candidate.new .resume-preview a.connect-network, .candidate.new .resume-preview .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker .candidate.new .resume-preview .ui-datepicker-buttonpane > button, .candidate.new .resume-preview .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration .candidate.new .resume-preview .hire-celebration-share-button, .candidate.new .dropzone-processing .button, .candidate.new .dropzone-processing a.connect-network, .candidate.new .dropzone-processing .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker .candidate.new .dropzone-processing .ui-datepicker-buttonpane > button, .candidate.new .dropzone-processing .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration .candidate.new .dropzone-processing .hire-celebration-share-button, .candidate.new .dropzone-resume-area .button, .candidate.new .dropzone-resume-area a.connect-network, .candidate.new .dropzone-resume-area .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker .candidate.new .dropzone-resume-area .ui-datepicker-buttonpane > button, .candidate.new .dropzone-resume-area .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration .candidate.new .dropzone-resume-area .hire-celebration-share-button, .candidate.edit .resume-preview .button, .candidate.edit .resume-preview a.connect-network, .candidate.edit .resume-preview .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker .candidate.edit .resume-preview .ui-datepicker-buttonpane > button, .candidate.edit .resume-preview .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration .candidate.edit .resume-preview .hire-celebration-share-button, .candidate.edit .dropzone-processing .button, .candidate.edit .dropzone-processing a.connect-network, .candidate.edit .dropzone-processing .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker .candidate.edit .dropzone-processing .ui-datepicker-buttonpane > button, .candidate.edit .dropzone-processing .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration .candidate.edit .dropzone-processing .hire-celebration-share-button, .candidate.edit .dropzone-resume-area .button, .candidate.edit .dropzone-resume-area a.connect-network, .candidate.edit .dropzone-resume-area .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker .candidate.edit .dropzone-resume-area .ui-datepicker-buttonpane > button, .candidate.edit .dropzone-resume-area .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration .candidate.edit .dropzone-resume-area .hire-celebration-share-button {
+    #add-candidates-app .resume-preview .button, #add-candidates-app .resume-preview a.connect-network, #add-candidates-app .resume-preview .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker #add-candidates-app .resume-preview .ui-datepicker-buttonpane > button, #add-candidates-app .resume-preview .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration #add-candidates-app .resume-preview .hire-celebration-share-button, #add-candidates-app .dropzone-processing .button, #add-candidates-app .dropzone-processing a.connect-network, #add-candidates-app .dropzone-processing .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker #add-candidates-app .dropzone-processing .ui-datepicker-buttonpane > button, #add-candidates-app .dropzone-processing .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration #add-candidates-app .dropzone-processing .hire-celebration-share-button, #add-candidates-app .dropzone-resume-area .button, #add-candidates-app .dropzone-resume-area a.connect-network, #add-candidates-app .dropzone-resume-area .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker #add-candidates-app .dropzone-resume-area .ui-datepicker-buttonpane > button, #add-candidates-app .dropzone-resume-area .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration #add-candidates-app .dropzone-resume-area .hire-celebration-share-button, .candidate.edit .resume-preview .button, .candidate.edit .resume-preview a.connect-network, .candidate.edit .resume-preview .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker .candidate.edit .resume-preview .ui-datepicker-buttonpane > button, .candidate.edit .resume-preview .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration .candidate.edit .resume-preview .hire-celebration-share-button, .candidate.edit .dropzone-processing .button, .candidate.edit .dropzone-processing a.connect-network, .candidate.edit .dropzone-processing .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker .candidate.edit .dropzone-processing .ui-datepicker-buttonpane > button, .candidate.edit .dropzone-processing .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration .candidate.edit .dropzone-processing .hire-celebration-share-button, .candidate.edit .dropzone-resume-area .button, .candidate.edit .dropzone-resume-area a.connect-network, .candidate.edit .dropzone-resume-area .ui-datepicker .ui-datepicker-buttonpane > button, .ui-datepicker .candidate.edit .dropzone-resume-area .ui-datepicker-buttonpane > button, .candidate.edit .dropzone-resume-area .job_applications #share-celebration .hire-celebration-share-button, .job_applications #share-celebration .candidate.edit .dropzone-resume-area .hire-celebration-share-button {
       padding: 0px 8px; }
-  .candidate.new .dropzone-resume-area, .candidate.edit .dropzone-resume-area {
+  #add-candidates-app .dropzone-resume-area, #add-candidates-app.edit .dropzone-resume-area {
     min-height: 207px; }
-  .candidate.new .dropzone-resume-area.dropzone-drag-hover, .candidate.edit .dropzone-resume-area.dropzone-drag-hover {
+  #add-candidates-app .dropzone-resume-area.dropzone-drag-hover, #add-candidates-app.edit .dropzone-resume-area.dropzone-drag-hover {
     padding: 13px 10px 8px 10px; }
-  .candidate.new .resume-preview .uploaded-filename, .candidate.new .dropzone-processing .uploaded-filename, .candidate.edit .resume-preview .uploaded-filename, .candidate.edit .dropzone-processing .uploaded-filename {
+  #add-candidates-app .resume-preview .uploaded-filename, #add-candidates-app .dropzone-processing .uploaded-filename, #add-candidates-app.edit .resume-preview .uploaded-filename, #add-candidates-app.edit .dropzone-processing .uploaded-filename {
     line-height: 18px;
     margin-top: 10px;
     overflow-wrap: break-word; }
-  .candidate.new .resume-preview .actions, .candidate.new .dropzone-processing .actions, .candidate.edit .resume-preview .actions, .candidate.edit .dropzone-processing .actions {
+  #add-candidates-app .resume-preview .actions, #add-candidates-app .dropzone-processing .actions, #add-candidates-app.edit .resume-preview .actions, #add-candidates-app.edit .dropzone-processing .actions {
     word-wrap: break-word; }
-    .candidate.new .resume-preview .actions .remove-file, .candidate.new .dropzone-processing .actions .remove-file, .candidate.edit .resume-preview .actions .remove-file, .candidate.edit .dropzone-processing .actions .remove-file {
+    #add-candidates-app .resume-preview .actions .remove-file, #add-candidates-app .dropzone-processing .actions .remove-file, #add-candidates-app.edit .resume-preview .actions .remove-file, #add-candidates-app.edit .dropzone-processing .actions .remove-file {
       vertical-align: top; }
-    .candidate.new .resume-preview .actions .atsicon-remove, .candidate.new .resume-preview .actions .select2-container .select2-choice .select2-search-choice-close, .select2-container .select2-choice .candidate.new .resume-preview .actions .select2-search-choice-close, .candidate.new .dropzone-processing .actions .atsicon-remove, .candidate.new .dropzone-processing .actions .select2-container .select2-choice .select2-search-choice-close, .select2-container .select2-choice .candidate.new .dropzone-processing .actions .select2-search-choice-close, .candidate.edit .resume-preview .actions .atsicon-remove, .candidate.edit .resume-preview .actions .select2-container .select2-choice .select2-search-choice-close, .select2-container .select2-choice .candidate.edit .resume-preview .actions .select2-search-choice-close, .candidate.edit .dropzone-processing .actions .atsicon-remove, .candidate.edit .dropzone-processing .actions .select2-container .select2-choice .select2-search-choice-close, .select2-container .select2-choice .candidate.edit .dropzone-processing .actions .select2-search-choice-close {
+    #add-candidates-app .resume-preview .actions .atsicon-remove, #add-candidates-app .resume-preview .actions .select2-container .select2-choice .select2-search-choice-close, .select2-container .select2-choice #add-candidates-app .resume-preview .actions .select2-search-choice-close, #add-candidates-app .dropzone-processing .actions .atsicon-remove, #add-candidates-app .dropzone-processing .actions .select2-container .select2-choice .select2-search-choice-close, .select2-container .select2-choice #add-candidates-app .dropzone-processing .actions .select2-search-choice-close, #add-candidates-app.edit .resume-preview .actions .atsicon-remove, #add-candidates-app.edit .resume-preview .actions .select2-container .select2-choice .select2-search-choice-close, .select2-container .select2-choice #add-candidates-app.edit .resume-preview .actions .select2-search-choice-close, #add-candidates-app.edit .dropzone-processing .actions .atsicon-remove, #add-candidates-app.edit .dropzone-processing .actions .select2-container .select2-choice .select2-search-choice-close, .select2-container .select2-choice #add-candidates-app.edit .dropzone-processing .actions .select2-search-choice-close {
       font-size: 11px;
       vertical-align: middle; }
-  .candidate.new #or, .candidate.edit #or {
+  #add-candidates-app #or, #add-candidates-app.edit #or {
     border-bottom: 1px solid #ced4db;
     height: 6px;
     line-height: 12px;
     margin: 9px 0 17px -6%;
     position: relative;
     width: 112.5%; }
-    .candidate.new #or span, .candidate.edit #or span {
+    #add-candidates-app #or span, #add-candidates-app.edit #or span {
       background-color: #fff;
       padding: 0 5px;
       position: absolute;
       left: 43.5%;
       font-weight: 600;
       color: #2e5caa; }
-  .candidate.new .dropzone-area .dropzone-overlay, .candidate.edit .dropzone-area .dropzone-overlay {
+  #add-candidates-app .dropzone-area .dropzone-overlay, #add-candidates-app.edit .dropzone-area .dropzone-overlay {
     display: none; }
-  .candidate.new .dropzone-area.dropzone-drag-hover, .candidate.edit .dropzone-area.dropzone-drag-hover {
+  #add-candidates-app .dropzone-area.dropzone-drag-hover, #add-candidates-app.edit .dropzone-area.dropzone-drag-hover {
     border: 3px dashed #626262;
     position: relative; }
-    .candidate.new .dropzone-area.dropzone-drag-hover .dropzone-overlay, .candidate.edit .dropzone-area.dropzone-drag-hover .dropzone-overlay {
+    #add-candidates-app .dropzone-area.dropzone-drag-hover .dropzone-overlay, #add-candidates-app.edit .dropzone-area.dropzone-drag-hover .dropzone-overlay {
       z-index: 9999;
       display: block;
       pointer-events: none\9;
@@ -1872,7 +1872,7 @@ input.fileupload{position:absolute;top:-6px;right:-6px;width:250px;height:20px;m
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.7); }
-      .candidate.new .dropzone-area.dropzone-drag-hover .dropzone-overlay .label, .candidate.edit .dropzone-area.dropzone-drag-hover .dropzone-overlay .label {
+      #add-candidates-app .dropzone-area.dropzone-drag-hover .dropzone-overlay .label, #add-candidates-app.edit .dropzone-area.dropzone-drag-hover .dropzone-overlay .label {
         /*font-family: "proxima-nova-n4", "proxima-nova", sans-serif;*/
         margin-top: 0;
         height: 100%;
@@ -1881,160 +1881,160 @@ input.fileupload{position:absolute;top:-6px;right:-6px;width:250px;height:20px;m
         position: absolute;
         left: 50%;
         font-size: 30px; }
-        .candidate.new .dropzone-area.dropzone-drag-hover .dropzone-overlay .label .label-middle, .candidate.edit .dropzone-area.dropzone-drag-hover .dropzone-overlay .label .label-middle {
+        #add-candidates-app .dropzone-area.dropzone-drag-hover .dropzone-overlay .label .label-middle, #add-candidates-app.edit .dropzone-area.dropzone-drag-hover .dropzone-overlay .label .label-middle {
           display: table-cell;
           vertical-align: middle; }
-          .candidate.new .dropzone-area.dropzone-drag-hover .dropzone-overlay .label .label-middle .label-center, .candidate.edit .dropzone-area.dropzone-drag-hover .dropzone-overlay .label .label-middle .label-center {
+          #add-candidates-app .dropzone-area.dropzone-drag-hover .dropzone-overlay .label .label-middle .label-center, #add-candidates-app.edit .dropzone-area.dropzone-drag-hover .dropzone-overlay .label .label-middle .label-center {
             vertical-align: middle;
             position: relative;
             left: -50%; }
-  .candidate.new .dropzone-area .atsicon-drag-and-drop, .candidate.edit .dropzone-area .atsicon-drag-and-drop {
+  #add-candidates-app .dropzone-area .atsicon-drag-and-drop, #add-candidates-app.edit .dropzone-area .atsicon-drag-and-drop {
     padding: 10px 8px;
     margin: 10px;
     font-size: 40px;
     color: #306ec3; }
-  .candidate.new .dropzone-area .dropzone-instructions, .candidate.edit .dropzone-area .dropzone-instructions {
+  #add-candidates-app .dropzone-area .dropzone-instructions, #add-candidates-app.edit .dropzone-area .dropzone-instructions {
     padding-top: 15px; }
-  .candidate.new .dropzone-area .dropzone-resume-text, .candidate.edit .dropzone-area .dropzone-resume-text {
+  #add-candidates-app .dropzone-area .dropzone-resume-text, #add-candidates-app.edit .dropzone-area .dropzone-resume-text {
     opacity: 0.4;
     font-weight: 600;
     color: #306ec3;
     font-size: 13px;
     line-height: 20px;
     padding: 5px 20px; }
-  .candidate.new .assign-to-job-message, .candidate.edit .assign-to-job-message {
+  #add-candidates-app .assign-to-job-message, #add-candidates-app.edit .assign-to-job-message {
     width: 100%;
     height: 200px; }
-  .candidate.new li.select2-disabled, .candidate.edit li.select2-disabled {
+  #add-candidates-app li.select2-disabled, #add-candidates-app.edit li.select2-disabled {
     display: none; }
-.candidate .candidate-overview-value {
+#add-candidates-app .candidate-overview-value {
   padding-left: 5px; }
-.candidate .row.add-title {
+#add-candidates-app .row.add-title {
   border-bottom: 1px solid #ced4db;
   margin-bottom: 20px; }
-.candidate .row.add-title:last-of-type {
+#add-candidates-app .row.add-title:last-of-type {
   margin-bottom: 5px; }
-.candidate .bottom-action {
+#add-candidates-app .bottom-action {
   padding: 5px 0px 10px; }
-.candidate .button-icon.remove {
+#add-candidates-app .button-icon.remove {
   float: right;
   padding: 0px;
   padding-right: 3px; }
-.candidate .button-icon .atsicon-remove, .candidate .button-icon .select2-container .select2-choice .select2-search-choice-close, .select2-container .select2-choice .candidate .button-icon .select2-search-choice-close {
+#add-candidates-app .button-icon .atsicon-remove, #add-candidates-app .button-icon .select2-container .select2-choice .select2-search-choice-close, .select2-container .select2-choice #add-candidates-app .button-icon .select2-search-choice-close {
   margin: 0px; }
-.candidate .tab {
+#add-candidates-app .tab {
   border-color: #ced4db; }
-.candidate .job-name {
+#add-candidates-app .job-name {
   width: 35px !important; }
-.candidate .status-filter-title {
+#add-candidates-app .status-filter-title {
   width: 50px !important; }
-.candidate .manager-filter {
+#add-candidates-app .manager-filter {
   margin-top: -3px; }
-.candidate .filters .form-button {
+#add-candidates-app .filters .form-button {
   min-width: 86px; }
-.candidate .filters .per-page-field {
+#add-candidates-app .filters .per-page-field {
   float: left;
   clear: both;
   padding-top: 5px; }
-.candidate .filters .actions {
+#add-candidates-app .filters .actions {
   float: left;
   clear: both;
   width: 100%; }
-.candidate .area-job-assignments .candidate-action {
+#add-candidates-app .area-job-assignments .candidate-action {
   width: 100%; }
-.candidate .tags-filter {
+#add-candidates-app .tags-filter {
   margin-bottom: 10px;
   display: inline; }
-  .candidate .tags-filter .letter {
+  #add-candidates-app .tags-filter .letter {
     font-weight: bold;
     padding-top: 6px; }
-  .candidate .tags-filter > .row {
+  #add-candidates-app .tags-filter > .row {
     border-bottom: 1px solid #eee;
     padding-bottom: 10px; }
-.candidate .area-tags .atsicon-tag2:before {
+#add-candidates-app .area-tags .atsicon-tag2:before {
   font-size: 18px;
   color: #2e5caa; }
-.candidate table.notes-list td.action {
+#add-candidates-app table.notes-list td.action {
   padding-top: 15px; }
-.candidate table.notes-list .atsicon-ico-private {
+#add-candidates-app table.notes-list .atsicon-ico-private {
   font-size: 13px;
   color: #5a5a5a;
   vertical-align: baseline; }
-.candidate table.notes-list .viewable-by {
+#add-candidates-app table.notes-list .viewable-by {
   line-height: 1em;
   margin-top: 5px; }
-  .candidate table.notes-list .viewable-by .atsicon-ico-private {
+  #add-candidates-app table.notes-list .viewable-by .atsicon-ico-private {
     color: #5a5a5a;
     vertical-align: bottom; }
-.candidate table.email-list td {
+#add-candidates-app table.email-list td {
   vertical-align: top; }
-.candidate table.docs-list .controls {
+#add-candidates-app table.docs-list .controls {
   vertical-align: middle;
   text-align: center;
   padding-right: 10px; }
-.candidate .doc-spinner-box {
+#add-candidates-app .doc-spinner-box {
   float: left;
   margin-top: -25px; }
-.candidate .doc-bottom-action {
+#add-candidates-app .doc-bottom-action {
   padding: 5px 0px 10px 70px; }
-.candidate table.candidate-list .button-icon i {
+#add-candidates-app table.candidate-list .button-icon i {
   font-size: 14px; }
-.candidate table.candidate-list tr.job_applications {
+#add-candidates-app table.candidate-list tr.job_applications {
   border-top: 1px solid #f0f0f0;
   border-bottom: 0px; }
-.candidate table.candidate-list td.name a {
+#add-candidates-app table.candidate-list td.name a {
   text-align: top; }
-.candidate table.candidate-list th.controls {
+#add-candidates-app table.candidate-list th.controls {
   width: 2%; }
-.candidate table.candidate-list td {
+#add-candidates-app table.candidate-list td {
   vertical-align: middle;
   padding: 5px 0px; }
-  .candidate table.candidate-list td .atsicon-triangle-right, .candidate table.candidate-list td .ui-datepicker .ui-datepicker-next, .ui-datepicker .candidate table.candidate-list td .ui-datepicker-next, .candidate table.candidate-list td .atsicon-triangle-down {
+  #add-candidates-app table.candidate-list td .atsicon-triangle-right, #add-candidates-app table.candidate-list td .ui-datepicker .ui-datepicker-next, .ui-datepicker #add-candidates-app table.candidate-list td .ui-datepicker-next, #add-candidates-app table.candidate-list td .atsicon-triangle-down {
     padding-top: 1px; }
-.candidate table.candidate-list .more-applications a {
+#add-candidates-app table.candidate-list .more-applications a {
   font-size: 10px;
   color: #B00; }
-.candidate table.candidate-list .more-applications a:hover {
+#add-candidates-app table.candidate-list .more-applications a:hover {
   color: #FFAAAA; }
-.candidate table.candidate-list .job_applications_details {
+#add-candidates-app table.candidate-list .job_applications_details {
   border-bottom: none; }
-  .candidate table.candidate-list .job_applications_details .candidate-summary.loaded {
+  #add-candidates-app table.candidate-list .job_applications_details .candidate-summary.loaded {
     background-color: #fcfcfd;
     padding: 10px 1px 10px 20px;
     margin-left: 20px;
     border-radius: 4px;
     margin-bottom: 10px; }
-    .candidate table.candidate-list .job_applications_details .candidate-summary.loaded .label-name {
+    #add-candidates-app table.candidate-list .job_applications_details .candidate-summary.loaded .label-name {
       display: inline-block;
       width: 70px;
       vertical-align: top; }
-    .candidate table.candidate-list .job_applications_details .candidate-summary.loaded .label-value {
+    #add-candidates-app table.candidate-list .job_applications_details .candidate-summary.loaded .label-value {
       display: inline-block;
       width: 123px;
       word-wrap: break-word; }
-  .candidate table.candidate-list .job_applications_details td {
+  #add-candidates-app table.candidate-list .job_applications_details td {
     padding: 0; }
-  .candidate table.candidate-list .job_applications_details div.row, .candidate table.candidate-list .job_applications_details div.columns {
+  #add-candidates-app table.candidate-list .job_applications_details div.row, #add-candidates-app table.candidate-list .job_applications_details div.columns {
     padding-left: 0px;
     padding-right: 0px; }
-.candidate .user-email-fields {
+#add-candidates-app .user-email-fields {
   width: 100%; }
-.candidate .user-email-message {
+#add-candidates-app .user-email-message {
   width: 100%;
   height: 150px; }
-.candidate .resume_data {
+#add-candidates-app .resume_data {
   padding-left: 20px; }
-.candidate.forward_list .recipients .columns, .candidate.forward_list .recipients label {
+#add-candidates-app.forward_list .recipients .columns, #add-candidates-app.forward_list .recipients label {
   line-height: 13px; }
-.candidate.forward_list .recipients .select2-choices {
+#add-candidates-app.forward_list .recipients .select2-choices {
   min-height: 28px; }
-.candidate.forward_list .recipients .marker {
+#add-candidates-app.forward_list .recipients .marker {
   top: 8px; }
-.candidate .secondary nav.info span {
+#add-candidates-app .secondary nav.info span {
   vertical-align: baseline; }
-.candidate .ratings-average i {
+#add-candidates-app .ratings-average i {
   font-size: 12px; }
-.candidate .rating.large {
+#add-candidates-app .rating.large {
   padding: 0px 4px !important; }
 
 #scoreDetailPanel table.score-details {
