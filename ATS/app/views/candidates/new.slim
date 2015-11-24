@@ -14,9 +14,9 @@
                 = "Select File to Upload"
               #or
                 span OR
-            a.button.tall ng-click="vm.resumeTextDialog()" ng-hide=("vm.candidate.resume.upload || vm.dropzoneControls.uploaderProcessing || vm.dropzoneControls.uploaderError")
-              i.atsicon.atsicon-text-resume
-              span.text Type or Paste Resume Text
+              a.button.tall ng-click="vm.resumeTextDialog()" ng-hide=("vm.candidate.resume.upload || vm.dropzoneControls.uploaderProcessing || vm.dropzoneControls.uploaderError")
+                i.fa.fa-file-text-o
+                span.text Type or Paste Resume Text
           .small-9-5.columns
             section.area
               main
@@ -24,12 +24,12 @@
                   .candidate-contact-area.row ng-controller=("CandidateContactController as contactVm")
                     .small-2.columns
                       label First Name:
-                      span.marker.required
+                      span.fa.fa-asterisk
                     .small-4.columns
                       input.ui-form-field.full autofocus="" name="candidate_card_first_name" ng-model="contactVm.candidate.first_name" type="text" /
                     .small-2.columns
                       label Last Name:
-                      span.marker.required
+                      span.fa.fa-asterisk
                     .small-4.columns
                       input.ui-form-field.full name="candidate_card_last_name" ng-model="contactVm.candidate.last_name" type="text" /
                     .small-2.columns
@@ -299,41 +299,7 @@
                       label Mobile Phone:
                     .small-4.columns
                       input.ui-form-field.full name="candidate_card_mobile_phone" ng-model="contactVm.candidate.mobile_phone" type="text" /
-                .line-bottom
-                  .row ng-controller=("CandidateLinksController as linksVm")
-                    .small-2.columns Links:
-                    .small-10.columns
-                      .row ng-cloak="" ng-hide=("link._destroy || link.hide") ng-repeat=("link in linksVm.candidate.urls track by $index")
-                        .small-7-2.columns
-                          jobscore-link-field.ui-form-field.full link="link" name=("candidate_card_urls_{{ $index }}_url") ng-model="link.url" select-name=("candidate_card_urls_{{ $index }}_network")
-                        .small-4-8.columns
-                          select.link-select.full-with-icon name=("candidate_card_urls_{{ $index }}_network") ng-model="link.network" ngcloak="" ui-select2="linksVm.linksSelectOptions"
-                            option value=""  - select link type -
-                            option value="candidate_url_skype"  Skype
-                            option value="candidate_url_other"  Other
-                            option value="candidate_url_blog"  Personal Blog
-                            option value="candidate_url_portfolio"  Portfolio
-                            option value="candidate_url_behance"  Behance
-                            option value="candidate_url_blogger"  Blogger
-                            option value="candidate_url_dribbble"  Dribbble
-                            option value="candidate_url_facebook"  Facebook
-                            option value="candidate_url_flickr"  Flickr
-                            option value="candidate_url_foursquare"  Foursquare
-                            option value="candidate_url_github"  GitHub
-                            option value="candidate_url_google_plus"  Google+
-                            option value="candidate_url_instagram"  Instagram
-                            option value="candidate_url_linked_in"  LinkedIn
-                            option value="candidate_url_medium"  Medium
-                            option value="candidate_url_reddit"  Reddit
-                            option value="candidate_url_soundcloud"  SoundCloud
-                            option value="candidate_url_tumblr"  Tumblr
-                            option value="candidate_url_twitter"  Twitter
-                            option value="candidate_url_vimeo"  Vimeo
-                            option value="candidate_url_vine"  Vine
-                            option value="candidate_url_wordpress"  Wordpress
-                            option value="candidate_url_youtube"  YouTube
-                          a.button-icon.right.js-remove-link ng-click="linksVm.removeLink(link, $index)"
-                            i.atsicon.atsicon-remove
+
 
                 div ng-controller=("CandidateWorkAndEducationHistoryController as historyVm")
                   .row.line-bottom name="candidate_card_candidate_employers"
@@ -591,14 +557,14 @@
                                       input.ui-form-field.full name=("employers_{{ $parent.$index }}_titles_{{ $index }}_title") ng-model="title.title" placeholder="Title" type="text" /
                                     td.width-5-percent.actions.nopadding
                                       a.button-icon.js-remove-employer-title href="" ng-click="historyVm.removeEmployerTitle(employer, title, $parent.$index, $index)"
-                                        i.atsicon.atsicon-remove
+                                        i.fa.fa-times
                                         span.text
                               .add-title-button-container
                                 a.button-link.js-btn-with-icon href="" ng-click="historyVm.addEmployerTitle(employer)"
-                                  i.atsicon.atsicon-add
+                                  i.fa.fa-plus
                                   span.text Add Title
                       a.button-link.js-btn-with-icon href="" ng-click="historyVm.addEmployer()" title=("Add Employer")
-                        i.atsicon.atsicon-add
+                        i.fa.fa-plus
                         span.text Add Employer
                   .row.line-bottom name="candidate_card_candidate_education_histories"
                     .small-2.columns Education:
@@ -744,16 +710,16 @@
                             td.width-34-percent.align-middle
                               input#education_degree_major.ui-form-field.width-88-percent name=("educations_{{ $index }}_degree_major") ng-model="education.degree_major" placeholder="Major" size="30" type="text" /
                               a.button-icon.float-right.js-remove-education-history href="" ng-click="historyVm.removeEducationHistory(education, $index)"
-                                i.atsicon.atsicon-remove.actions
+                                i.fa.fa-times.actions
                                 span.text
                       a.button-link.js-btn-with-icon href="" ng-click="historyVm.addEducationHistory()"
-                        i.atsicon.atsicon-add
+                        i.fa.fa-plus
                         span.text Add Degree
 
                 .row ng-controller=("CandidateSourceController as sourceVm")
                   .small-2.columns
                     label Source:
-                    span.marker.required
+                    span.fa.fa-asterisk
                   .small-4.columns
                     select.full name="candidate_card_source_id" ng-change="sourceVm.resetReferralRequired()" ng-model="sourceVm.candidate.source_id" ui-select2=""
                       option value=""  - select -
