@@ -14,4 +14,8 @@ class ApplicationController < ActionController::Base
   def require_login
     redirect_to root_path if !signed_in?
   end
+
+  def after_sign_out_path_for(resource_or_scope)
+    respond_to?(:root_path) ? new_user_session_path : new_user_session_path
+  end
 end

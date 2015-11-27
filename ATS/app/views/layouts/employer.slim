@@ -147,11 +147,12 @@ body.welcome.show_welcome.modern
               span.hide.js-throbber-top-search-candidate
                 = image_tag "throbber_vertical_active.gif"
   #container
-    .notification.flash.success-box.hide
-      .icon
-        i.fa.fa-check
-      .content
-        = ''
+    - if flash[:notice].present?
+      .notification.flash.success-box
+        .icon
+          i.fa.fa-check
+        .content
+          = flash[:notice]
   	=yield
   	
   footer

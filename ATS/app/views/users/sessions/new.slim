@@ -2,6 +2,9 @@
 .sessions.new.modern{style="height: 585px" }
   .login-area
     #login-page-title.text-center EMPLOYER LOGIN
+    - if flash[:notice].present?
+      .success
+        = flash[:notice]
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       div style="margin:0;padding:0;display:inline"
         input name="utf8" type="hidden" value="✓" /
