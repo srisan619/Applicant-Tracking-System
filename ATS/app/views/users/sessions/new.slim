@@ -5,6 +5,9 @@
     - if flash[:notice].present?
       .success
         = flash[:notice]
+    - if flash[:alert].present?
+      .error
+        = flash[:alert]
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       div style="margin:0;padding:0;display:inline"
         input name="utf8" type="hidden" value="✓" /
