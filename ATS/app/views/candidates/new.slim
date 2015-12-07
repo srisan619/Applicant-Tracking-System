@@ -5,12 +5,14 @@
       h1 Add Candidate
 
   section.area-container
-    form name="vm.form" ng-submit="vm.submit()" novalidate=""
+    = form_for @candidate, html: { method: @candidate.new_record? ? 'POST' : 'PUT', id: 'task_form' } do |f|
+
       main.grid-form
         .row.collapse
           .small-2-5.columns
             .dropzone-resume-area.dropzone-area accept=".pdf,.doc,.docx,.txt,.html,.rtf" ng-hide=("vm.candidate.resume.upload === 'text' || (vm.dropzoneControls.uploaderSuccess || vm.dropzoneControls.uploaderError) || vm.dropzoneControls.uploaderProcessing") ng-model="vm.files" ng-model-rejected="vm.rejected_files" ngf-allow-dir="false" ngf-control-variables="vm.dropzoneControls" ngf-drag-over-class="dropzone-drag-hover" ngf-drop="" ngf-drop-available="vm.dragDropSupported" ngf-error-message="vm.errors.messages" ngf-max-size="5242880" ngf-max-size-error-message=("File is too large. Maximum file size is 5 MB.") ngf-multiple="false"
-              a.upload-button.button accept=".pdf,.doc,.docx,.txt,.html,.rtf" ng-model="vm.files" ng-model-rejected="vm.rejected_files" ngf-allow-dir="false" ngf-control-variables="vm.dropzoneControls" ngf-error-message="vm.errors.messages" ngf-max-size="5242880" ngf-max-size-error-message=("File is too large. Maximum file size is 5 MB.") ngf-multiple="false" ngf-select=""
+              = f.file_field :resume, class: 'upload-button button'
+              /a.upload-button.button accept=".pdf,.doc,.docx,.txt,.html,.rtf" ng-model="vm.files" ng-model-rejected="vm.rejected_files" ngf-allow-dir="false" ngf-control-variables="vm.dropzoneControls" ngf-error-message="vm.errors.messages" ngf-max-size="5242880" ngf-max-size-error-message=("File is too large. Maximum file size is 5 MB.") ngf-multiple="false" ngf-select=""
                 = "Select File to Upload"
               #or
                 span OR
@@ -21,21 +23,24 @@
             section.area
               main
                 .line-bottom
-                  .candidate-contact-area.row ng-controller=("CandidateContactController as contactVm")
+                  .candidate-contact-area.row
                     .small-2.columns
                       label First Name:
                       span.fa.fa-asterisk
                     .small-4.columns
-                      input.ui-form-field.full autofocus="" name="candidate_card_first_name" ng-model="contactVm.candidate.first_name" type="text" /
+                      = f.text_field :first_name, class: 'ui-form-field full'
+                      /input.ui-form-field.full autofocus="" name="candidate_card_first_name" ng-model="contactVm.candidate.first_name" type="text" /
                     .small-2.columns
                       label Last Name:
                       span.fa.fa-asterisk
                     .small-4.columns
-                      input.ui-form-field.full name="candidate_card_last_name" ng-model="contactVm.candidate.last_name" type="text" /
+                      = f.text_field :last_name, class: 'ui-form-field full'
+                      /input.ui-form-field.full name="candidate_card_last_name" ng-model="contactVm.candidate.last_name" type="text" /
                     .small-2.columns
                       label Email:
                     .small-4.columns
-                      input.ui-form-field.full name="candidate_card_home_email" ng-model="contactVm.candidate.home_email" type="text" /
+                      = f.text_field :email, class: 'ui-form-field full'
+                      /input.ui-form-field.full name="candidate_card_home_email" ng-model="contactVm.candidate.home_email" type="text" /
                     .small-2.columns
                       label Country:
                     .small-4.columns
