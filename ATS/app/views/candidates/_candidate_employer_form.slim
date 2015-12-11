@@ -1,0 +1,30 @@
+table.default-table
+  tbody
+    tr.candidate-employer-row
+      td.width-33-percent
+        = f.text_field :employer_name, class: 'ui-form-field full', placeholder: 'Employer'
+        /input.ui-form-field.full name=("employers_{{ $index }}_employer") ng-model="employer.employer" placeholder="Employer" type="text" /
+
+      td.width-67-percent
+        table.inner-table-body.spaced-table.default-table
+          tbody
+            tr ng-hide="title._destroy" ng-repeat=("title in employer.candidate_titles track by $index")
+              td.width-17-percent
+                /select#title_position_start_date.select-position-start-date.full jobscore-year-only="true" name=("employers_{{ $parent.$index }}_titles_{{ $index }}_position_start_date") ng-model="title.position_start_date" placeholder="Start" ui-select2=""
+                = select_year(Date.today, start_year: Date.today.year, end_year: 1990, class: 'select-position-start-date full', placeholder: "Start")
+                /= date_select :date, :start_year => Date.current.year, :end_year => 1920
+              td.width-17-percent
+                /select#title_position_end_date.select-position-end-date.full jobscore-year-only="true" name=("employers_{{ $parent.$index }}_titles_{{ $index }}_position_end_date") ng-model="title.position_end_date" placeholder="End" ui-select2=""
+                = select_year(Date.today, start_year: Date.today.year, end_year: 1990, class: 'select-position-start-date full', placeholder: "Start", prompt: "pres")
+
+              td.width-59-percent
+                = f.text_field :title, class: 'ui-form-field full', placeholder: 'Title'
+                /input.ui-form-field.full name=("employers_{{ $parent.$index }}_titles_{{ $index }}_title") ng-model="title.title" placeholder="Title" type="text" /
+
+              td.width-5-percent.actions.nopadding
+                a.button-icon.js-remove-employer-title href="" ng-click="historyVm.removeEmployerTitle(employer, title, $parent.$index, $index)"
+                  i.fa.fa-times
+                  span.text
+a.button-link.js-btn-with-icon href="" ng-click="historyVm.addEmployer()" title=("Add Employer")
+  i.fa.fa-plus
+  span.text Add Employer
