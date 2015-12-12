@@ -8,4 +8,4 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-Rails.application.config.assets.precompile += %w( global.css normalize.css custom.css font-awesome.min.css select2.min.css jquery-ui.css jquery-1.10.2.js jquery-ui.js)
+Rails.application.config.assets.precompile += %w( global.css normalize.css custom.css font-awesome.min.css select2.min.css jquery-ui.css jquery-1.10.2.js jquery-ui.js ckeditor/*)

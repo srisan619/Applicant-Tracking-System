@@ -53,4 +53,5 @@ gem 'cancancan', '~> 1.10'
 gem "rolify"
 gem 'wicked'
 gem 'localized_country_select', '>= 0.9.11'
+gem 'ckeditor'
 

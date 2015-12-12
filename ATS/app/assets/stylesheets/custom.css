@@ -63,3 +63,11 @@ a.fa-pencil-square-o, a.fa-trash-o{
     display: inline !important;
     font-size: 18px;
 }
+
+.padding_20{
+    padding: 20px !important;
+}
+
+.resume_upload{
+    padding-top: 1.5px;
+}

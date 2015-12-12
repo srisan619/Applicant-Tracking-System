@@ -1,0 +1,14 @@
+table.default-table
+  tbody
+    tr.candidate-employer-row
+      td.width-33-percent
+        = f.text_field :school_name, class: 'ui-form-field full', placeholder: 'School', id: 'education_school_name', size: "30"
+      td.width-12-percent
+        = select_year(Date.today, start_year: Date.today.year, end_year: 1990, class: 'select-position-start-date full', placeholder: "Year", id: 'education_graduation_date')
+      td.width-21-percent
+        = f.select(:degree_name, options_for_select(get_degrees).html_safe, { :prompt => 'Select Degree' }, class: 'select-education-degree full', placeholder: 'Degree', id: 'education_degree_id')
+      td.width-34-percent.align-middle
+        = f.text_field :major, class: 'ui-form-field width-88-percent', placeholder: 'Major', id: 'education_degree_major', size: "30"
+a.button-link.js-btn-with-icon href="" ng-click="historyVm.addEducationHistory()"
+  i.fa.fa-plus
+  span.text Add Degree
