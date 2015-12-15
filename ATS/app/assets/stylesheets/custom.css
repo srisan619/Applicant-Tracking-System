@@ -71,3 +71,7 @@ a.fa-pencil-square-o, a.fa-trash-o{
 .resume_upload{
     padding-top: 1.5px;
 }
+
+ul li:hover ul{
+    display: block !important;
+}

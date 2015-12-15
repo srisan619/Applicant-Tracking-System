@@ -33,10 +33,10 @@ body.welcome.show_welcome.modern
                       = current_user.first_name
                     i.fa.fa-caret-down{style="float: right;" }
                   span.arrow-menu
-                  ul.actionmenu-group.actionmenu-vertical.navtab-submenu
-                    li
+                  ul.actionmenu-group.actionmenu-vertical.navtab-submenu.hide
+                    li.actionmenu-item
                       a.actionitem href="/employer/settings/view/"  My Settings
-                    li
+                    li.actionmenu-item
                       a.actionitem href="/users/sign_out"  Log Out
         ul
           li.company.top-dropdown
@@ -93,47 +93,47 @@ body.welcome.show_welcome.modern
               a href="#"
                 i.fa.fa-cog
                 | ADMIN
-              ul.navtab-submenu data-menu-scroll-enabled="false"
-                li
+              ul.navtab-submenu.actionmenu-group.actionmenu-vertical.hide data-menu-scroll-enabled="false"
+                li.actionmenu-item
                   a href="/employer/admin/account"  Account
-                li
+                li.actionmenu-item
                   a href="/employer/admin/view_users"  Users
-                li
+                li.actionmenu-item
                   a href="/employer/admin/edit_locations"  Locations
-                li
+                li.actionmenu-item
                   a href="/employer/admin/edit_departments"  Departments
-                li
+                li.actionmenu-item
                   a href="/employer/admin/edit_sources"  Sources
-                li
+                li.actionmenu-item
                   a href="/employer/account_active_sub_statuses"  Candidate Workflow
-                li
+                li.actionmenu-item
                   a href="/employer/account_task_categories"  Task Categories
-                li
+                li.actionmenu-item
                   a href="/employer/disposition_codes"  Disposition Codes
-                li
-                  a href="/employer/career_site_preferences/overview"  Careers Site
-                li
-                  a href="/employer/tags"  Tags
-                li
-                  a href="/employer/media"  Media Library
-                li
-                  a href="/employer/search_firms"  Search Firms
-                li
-                  span.actionmenu-group-title Templates:
-                li
-                  a href="/employer/admin/edit_job_defaults"  New Job
-                li
-                  a href="/employer/email_templates"  Email
-                li
-                  a href="/employer/note_templates"  Note
-                li
-                  a href="/employer/candidate_macros"  Action
-                li
-                  span.actionmenu-group-title Billing &amp; Credits:
-                li
-                  a href="/employer/admin/billing_info"  Billing Information
-                li
-                  a href="/employer/credit_manager"  Resume Credits
+                /li.actionmenu-item
+                /  a href="/employer/career_site_preferences/overview"  Careers Site
+                /li.actionmenu-item
+                /  a href="/employer/tags"  Tags
+                /li.actionmenu-item
+                /  a href="/employer/media"  Media Library
+                /li.actionmenu-item
+                /  a href="/employer/search_firms"  Search Firms
+                /li.actionmenu-item
+                /  span.actionmenu-group-title Templates:
+                /li.actionmenu-item
+                /  a href="/employer/admin/edit_job_defaults"  New Job
+                /li.actionmenu-item
+                /  a href="/employer/email_templates"  Email
+                /li.actionmenu-item
+                /  a href="/employer/note_templates"  Note
+                /li.actionmenu-item
+                /  a href="/employer/candidate_macros"  Action
+                /li.actionmenu-item
+                /  span.actionmenu-group-title Billing &amp; Credits:
+                /li.actionmenu-item
+                /  a href="/employer/admin/billing_info"  Billing Information
+                /li.actionmenu-item
+                /  a href="/employer/credit_manager"  Resume Credits
 
         .search
           form#candidate_search_form accept-charset="UTF-8" action="/employer/search/extended" method="get"
