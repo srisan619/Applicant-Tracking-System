@@ -1,0 +1,52 @@
+header.secondary
+  hgroup
+    h1 Admin:
+    h2 Account
+section.area-container
+  section.area
+    header
+      h3 Company Information
+      .actions
+        a href="/employers/edit_account"  edit
+    main
+      .grid-view-record
+        .row.collapse.remove_border
+          .small-2.columns
+            | Company Name:
+          .small-4.columns
+            = current_user.company_name
+          .small-2.columns
+            | Company URL:
+          .small-4.columns
+            = link_to current_user.company_url, current_user.company_url, target: "_blank"
+        /.row.collapse
+          /.small-2.columns
+          /  | Careers Site URL:
+          /.small-4.columns
+          /  a href="https://www.jobscore.com/jobs/angaaafrika"  https://www.jobscore.com/jobs/angaaafrika
+        .row.collapse.remove_border
+          .small-2.columns
+            | Organization Type:
+          .small-4.columns
+            | For Profit
+          .small-2.columns
+            | # of Employees:
+          .small-4.columns
+            = "#{current_user.employees_count} (as of #{current_user.created_at.strftime("%B %d, %Y")})"
+        .row.collapse.remove_border
+          .small-2.columns
+            | Logo:
+          .small-10.columns
+            | No logo selected
+  section.area
+    header
+      h3 Account Settings
+    main
+      .grid-view-record
+        .row.collapse
+          .small-2.columns
+            | Your plan:
+          .small-10.columns
+            = current_user.package.try(:name)
+            |  |
+            = link_to 'See Plans and Pricing &raquo;'.html_safe, "/employer/admin/plans?class=upgrade"

@@ -75,3 +75,19 @@ a.fa-pencil-square-o, a.fa-trash-o{
 ul li:hover ul{
     display: block !important;
 }
+
+.welcome .grid-view-record .remove_border{
+    border-bottom: medium none ;
+    margin-bottom: 0 ;
+}
+
+#submitButtons span.fa-asterisk::before{
+    right: 317px;
+    top: 9px;
+}
+
+#submitTaskButtons span.fa-asterisk::before{
+    margin-top: 10px;
+    right: 517px;
+    top: auto;
+}

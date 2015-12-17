@@ -1,0 +1,53 @@
+header.secondary
+  hgroup
+    h1 Admin:
+    h2 Edit Company Information
+section.area-container
+  = form_for @employer, html: {method: 'PUT', id: 'update_account_form'} do |f|
+    /form#update_account_form accept-charset="UTF-8" action="/employer/admin/update_account" method="post"
+    main
+      .grid-form
+        section.area.dropzone-logo.ui-account-details
+          main
+            .grid-form
+              .row
+                .small-2.columns
+                  label for="account_company_name"  Company Name
+                  span.fa.fa-asterisk
+                .small-4.columns
+                  = f.text_field :company_name, id: 'account_company_name', class: 'ui-form-field full', size: "50"
+                .small-2.columns
+                  label.right-label for="account_company_url"  Company URL
+                  span.fa.fa-asterisk
+                .small-4.columns
+                  = f.text_field :company_url, id: 'account_company_url', class: 'ui-form-field full', size: "100"
+              .row
+                .small-2.columns
+                  label for="account_employee_count"  # of Employees
+                  span.fa.fa-asterisk
+                .small-4.columns
+                  = f.text_field :employees_count, id: 'account_employee_count', class: 'ui-form-field full', maxlength: 6, size: "6"
+                .small-2.columns
+                  label.right-label for="account_organization_type_id"  Organization Type
+                  span.fa.fa-asterisk
+                .small-4.columns
+                  /= f.select(:oraganization_type, options_for_select(get_oraganization_types).html_safe, { :prompt => '- select -' }, {id: 'account_organization_type_id', class: 'js-select full'})
+
+              .row.choose-logo-row
+                .small-2.columns
+                  label for="careers_site_preference_logo"  Logo Image
+                  /= f.file_field :company_logo, class: "helpbutton ui-tooltip-target", title: 'JobScore supports .gif, .jpg, and .png images'
+                  /a.helpbutton.ui-tooltip-target title=("<p>JobScore supports .gif), .jpg, and .png images. On job boards the uploaded logo image will be resized to the maximum size of 160x160 pixels. On social media sharing the image will be resized to 720x440. We recommend you to upload images with at least this size (720x440) to avoid low quality images, and 1200x730 for good retina display support.</p><p>The logo image is included in JobScore emails, pushed out with your job postings and with social network shares. To update the image shown at the top of your job postings, please update the \"Header image\" under the Header attribute of your <a href=\"/employer/career_site_preferences/appearance\">careers site appearance</a> controls.</p><p>If this is the first time you are uploading your logo it will also be added to the header in your <a href=\"/employer/career_site_preferences/appearance\">careers site</a>.</p>"
+                  /  i.atsicon-help
+                .small-10.columns
+                  ul.files-list
+                  input#careers_site_preference_logo.fileupload.ui-form-field name="careers_site_preference[logo]" type="file" /
+              input#account_id name="account_id" type="hidden" value="aqOYiSzf0r5yrodG1ZS6tF" /
+
+        footer#submitButtons
+          .row
+            .small-12.columns.text-right
+              span.fa.fa-asterisk.inline.right_align_300
+              | Required Fields &nbsp;
+              a.form-button href="/employer/admin/account"  Cancel
+              button.form-button.green name="button" type="submit"  Update

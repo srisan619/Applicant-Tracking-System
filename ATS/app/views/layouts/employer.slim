@@ -35,7 +35,7 @@ body.welcome.show_welcome.modern
                   span.arrow-menu
                   ul.actionmenu-group.actionmenu-vertical.navtab-submenu.hide
                     li.actionmenu-item
-                      a.actionitem href="/employer/settings/view/"  My Settings
+                      = link_to 'My Settings', account_employers_path, class: 'actionitem'
                     li.actionmenu-item
                       a.actionitem href="/users/sign_out"  Log Out
         ul
@@ -95,7 +95,7 @@ body.welcome.show_welcome.modern
                 | ADMIN
               ul.navtab-submenu.actionmenu-group.actionmenu-vertical.hide data-menu-scroll-enabled="false"
                 li.actionmenu-item
-                  a href="/employer/admin/account"  Account
+                  = link_to 'Account', account_employers_path
                 li.actionmenu-item
                   a href="/employer/admin/view_users"  Users
                 li.actionmenu-item

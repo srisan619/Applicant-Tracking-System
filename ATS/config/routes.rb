@@ -13,7 +13,12 @@ Rails.application.routes.draw do
   end           
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  resources :employers
+  resources :employers do
+    collection do
+      get 'account'
+      get 'edit_account'
+    end
+  end
   resources :tasks, :path => "employer/tasks"
   resources :candidates, :path => "employer/candidates"
 
