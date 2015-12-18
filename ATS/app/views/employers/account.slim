@@ -28,7 +28,7 @@ section.area-container
           .small-2.columns
             | Organization Type:
           .small-4.columns
-            | For Profit
+            = current_user.organization_type
           .small-2.columns
             | # of Employees:
           .small-4.columns
@@ -37,7 +37,7 @@ section.area-container
           .small-2.columns
             | Logo:
           .small-10.columns
-            | No logo selected
+            = image_tag(current_user.company_logo.url(:thumb), title: "#{current_user.company_name}", class: 'retina-logo')
   section.area
     header
       h3 Account Settings

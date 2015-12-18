@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151212110139) do
+ActiveRecord::Schema.define(version: 20151218095408) do
 
   create_table "candidate_degrees", force: :cascade do |t|
     t.string   "school_name",  limit: 255
@@ -64,29 +64,34 @@ ActiveRecord::Schema.define(version: 20151212110139) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "email",                  limit: 255,   default: "", null: false
-    t.string   "encrypted_password",     limit: 255,   default: "", null: false
-    t.string   "reset_password_token",   limit: 255
+    t.string   "email",                     limit: 255,   default: "",           null: false
+    t.string   "encrypted_password",        limit: 255,   default: "",           null: false
+    t.string   "reset_password_token",      limit: 255
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          limit: 4,     default: 0,  null: false
+    t.integer  "sign_in_count",             limit: 4,     default: 0,            null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip",     limit: 255
-    t.string   "last_sign_in_ip",        limit: 255
-    t.datetime "created_at",                                        null: false
-    t.datetime "updated_at",                                        null: false
-    t.string   "first_name",             limit: 255,   default: ""
-    t.string   "last_name",              limit: 255,   default: ""
-    t.string   "type",                   limit: 255,   default: "", null: false
-    t.string   "company_name",           limit: 255,   default: ""
-    t.string   "company_url",            limit: 255,   default: ""
-    t.string   "phone",                  limit: 255,   default: ""
-    t.string   "mobile_phone",           limit: 255,   default: ""
-    t.integer  "employees_count",        limit: 4
-    t.integer  "package_id",             limit: 4
-    t.string   "country",                limit: 255,   default: ""
-    t.text     "links",                  limit: 65535
+    t.string   "current_sign_in_ip",        limit: 255
+    t.string   "last_sign_in_ip",           limit: 255
+    t.datetime "created_at",                                                     null: false
+    t.datetime "updated_at",                                                     null: false
+    t.string   "first_name",                limit: 255,   default: ""
+    t.string   "last_name",                 limit: 255,   default: ""
+    t.string   "type",                      limit: 255,   default: "",           null: false
+    t.string   "company_name",              limit: 255,   default: ""
+    t.string   "company_url",               limit: 255,   default: ""
+    t.string   "phone",                     limit: 255,   default: ""
+    t.string   "mobile_phone",              limit: 255,   default: ""
+    t.integer  "employees_count",           limit: 4
+    t.integer  "package_id",                limit: 4
+    t.string   "country",                   limit: 255,   default: ""
+    t.text     "links",                     limit: 65535
+    t.string   "organization_type",         limit: 255,   default: "For Profit"
+    t.string   "company_logo_file_name",    limit: 255
+    t.string   "company_logo_content_type", limit: 255
+    t.integer  "company_logo_file_size",    limit: 4
+    t.datetime "company_logo_updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

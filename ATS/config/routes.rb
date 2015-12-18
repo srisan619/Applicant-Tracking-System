@@ -17,6 +17,7 @@ Rails.application.routes.draw do
     collection do
       get 'account'
       get 'edit_account'
+      put 'update_account'
     end
   end
   resources :tasks, :path => "employer/tasks"
