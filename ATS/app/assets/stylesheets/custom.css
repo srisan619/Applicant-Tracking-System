@@ -91,3 +91,14 @@ ul li:hover ul{
     right: 517px;
     top: auto;
 }
+
+.margin_135{
+    margin-left: 135px;
+}
+
+#candidate_form span.fa-asterisk::before{
+    margin-top: 8px;
+    position: absolute;
+    right: 518px;
+    top: auto;
+}

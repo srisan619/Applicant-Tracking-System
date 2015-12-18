@@ -5,7 +5,7 @@
       h1 Add Candidate
 
   section.area-container
-    = form_for @candidate, html: { method: @candidate.new_record? ? 'POST' : 'PUT', id: 'task_form' } do |f|
+    = form_for @candidate, html: { method: @candidate.new_record? ? 'POST' : 'PUT', id: 'candidate_form' } do |f|
 
       main.grid-form
         .row.collapse
@@ -73,14 +73,14 @@
                   .row.line-bottom name="candidate_card_candidate_profiles"
                     .small-2.columns Candidate: Add Resume
                     .small-6.columns.nomargin
-                      = radio_button_tag 'resume', 'yes', true
+                      = radio_button_tag 'resume', 'yes', true, class: 'resume'
                       |  Attach Resume (.doc, .docx, .pdf, .txt, files only)
                     .small-4.columns.nomargin
-                      = radio_button_tag 'resume', 'no'
+                      = radio_button_tag 'resume', 'no', false, class: 'resume'
                       |  Type or Paste Resume
-                    .small-12.columns.nomargin.left.padding_20
-                      = f.file_field :resume, class: 'upload-button button resume_upload'
-                      br/
+                    .small-12.columns.nomargin.left.padding_20.attach
+                      = f.file_field :resume, class: 'upload-button button resume_upload margin_135'
+                    .small-12.columns.nomargin.left.padding_20.paste.hide
                       = f.cktext_area :links, :ckeditor => {:toolbar => 'mini'}
                 /.row ng-controller=("CandidateSourceController as sourceVm")
                 /  .small-2.columns
@@ -250,10 +250,9 @@
             /            a.button-link accept=".pdf,.doc,.docx,.txt,.html,.rtf" ng-model="noteVm.files" ng-model-rejected="noteVm.rejected_files" ng-show=("noteVm.note.documentList.length < 3") ngf-allow-dir="false" ngf-error-message="noteVm.docError" ngf-max-size="10485760" ngf-max-size-error-message=("File is too large. Maximum file size is 10 MB.") ngf-multiple="false" ngf-select="" title=("Add File")
             /              i.atsicon.atsicon-add
             /              span.text Click or drag and drop to attach a document
-      /footer
-      /  img alt="Loading" ng-show="vm.loading" src="/images/throbber_vertical_active.gif" /
-      /  span.required
-      /    span.marker.required
-      /    | Required Fields &nbsp;
-      /  button.form-button ng-click="vm.cancel()" type="button"  Cancel
-      /  button.green.form-button ng-disabled="vm.loading" type="submit"  Add
+      footer
+        span.required
+          span.fa.fa-asterisk
+          | Required Fields &nbsp;
+        = link_to 'Cancel', candidates_path, class: 'form-button'
+        button.green.form-button ng-disabled="vm.loading" type="submit"  Add
